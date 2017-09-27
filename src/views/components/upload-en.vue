@@ -53,7 +53,7 @@
                 <div slot="desc">
                     <p>Basic usage. Clikc to upload, each at one time.</p>
                 </div>
-                <i-code lang="html" slot="code">{{ code.select }}</i-code>
+                <i-code :title="title" lang="html" slot="code">{{ code.select }}</i-code>
             </Demo>
             <Demo title="Multi Choices">
                 <div slot="demo">
@@ -66,7 +66,7 @@
                 <div slot="desc">
                     <p>Set <code>multiple</code> prop to enable multi choices.</p>
                 </div>
-                <i-code lang="html" slot="code">{{ code.multiple }}</i-code>
+                <i-code :title="title" lang="html" slot="code">{{ code.multiple }}</i-code>
             </Demo>
             <Demo title="Manual Upload">
                 <div slot="demo">
@@ -80,7 +80,7 @@
                 <div slot="desc">
                     <p>Bind a function which returns <code>false</code> to <code>before-upload</code>. It will prevent default upload process and allow you control it manually.</p>
                 </div>
-                <i-code lang="html" slot="code">{{ code.manual }}</i-code>
+                <i-code :title="title" lang="html" slot="code">{{ code.manual }}</i-code>
             </Demo>
             <Demo title="Drag to Upload">
                 <div slot="demo">
@@ -97,7 +97,7 @@
                 <div slot="desc">
                     <p>Set <code>type</code> prop to <code>drag</code> to enable drag-to-upload.</p>
                 </div>
-                <i-code lang="html" slot="code">{{ code.drag }}</i-code>
+                <i-code :title="title" lang="html" slot="code">{{ code.drag }}</i-code>
             </Demo>
             <Demo title="Custom Upload List">
                 <div slot="demo">
@@ -149,7 +149,7 @@
                         <li>The size of each image does not exceed 2M.</li>
                     </ul>
                 </div>
-                <i-code lang="html" slot="code">{{ code.list }}</i-code>
+                <i-code :title="title" lang="html" slot="code">{{ code.list }}</i-code>
             </Demo>
             <div class="api">
                 <Anchor title="API" h2></Anchor>

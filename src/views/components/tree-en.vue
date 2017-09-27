@@ -13,7 +13,7 @@
                 <div slot="desc">
                     <p>The most basic usage, tell you how to use checkable, selectable, disabled, defaultExpandKeys, and etc.</p>
                 </div>
-                <i-code lang="html" slot="code">{{ code.base }}</i-code>
+                <i-code :title="title" lang="html" slot="code">{{ code.base }}</i-code>
             </Demo>
             <div class="api">
                 <Anchor title="API" h2></Anchor>

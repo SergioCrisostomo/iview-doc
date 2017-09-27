@@ -33,7 +33,7 @@
                     <p>The simplest usage.</p>
                     <p>Tip: Tooltip use <code>white-space: nowrap;</code> in text that is not automatically wrap. You can add style <code>white-space: normal;</code> in slot if you want to show a lot of content and automatically wrap.</p>
                 </div>
-                <i-code lang="html" slot="code">{{ code.base }}</i-code>
+                <i-code :title="title" lang="html" slot="code">{{ code.base }}</i-code>
             </Demo>
             <Demo title="Placement">
                 <div slot="demo">
@@ -87,7 +87,7 @@
                 <div slot="desc">
                     <p>The ToolTip has 12 placements choice. Details on API Doc.</p>
                 </div>
-                <i-code lang="html" slot="code">{{ code.placement }}</i-code>
+                <i-code :title="title" lang="html" slot="code">{{ code.placement }}</i-code>
             </Demo>
             <Demo title="Custom">
                 <div slot="demo">
@@ -102,7 +102,7 @@
                 <div slot="desc">
                     <p>Display multiple lines of text or more complex styles by customizing the slot.</p>
                 </div>
-                <i-code lang="html" slot="code">{{ code.content }}</i-code>
+                <i-code :title="title" lang="html" slot="code">{{ code.content }}</i-code>
             </Demo>
             <Demo title="Disabled">
                 <div slot="demo">
@@ -113,7 +113,7 @@
                 <div slot="desc">
                     <p>You can disable text prompts by setting the property <code>disabled</code>.</p>
                 </div>
-                <i-code lang="html" slot="code">{{ code.disabled }}</i-code>
+                <i-code :title="title" lang="html" slot="code">{{ code.disabled }}</i-code>
             </Demo>
             <Demo title="Delay">
                 <div slot="demo">
@@ -124,7 +124,7 @@
                 <div slot="desc">
                     <p>By setting the property <code>delay</code>, you can delay the text prompt, in milliseconds.</p>
                 </div>
-                <i-code lang="html" slot="code">{{ code.delay }}</i-code>
+                <i-code :title="title" lang="html" slot="code">{{ code.delay }}</i-code>
             </Demo>
             <div class="api">
                 <Anchor title="API" h2></Anchor>

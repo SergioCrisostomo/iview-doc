@@ -15,7 +15,7 @@
                 <div slot="desc">
                     <p>基本使用方法，有四种样式可以选择<code>info</code>、<code>success</code>、<code>warning</code>、<code>error</code>。</p>
                 </div>
-                <i-code lang="html" slot="code">{{ code.base }}</i-code>
+                <i-code :title="title" lang="html" slot="code">{{ code.base }}</i-code>
             </Demo>
             <Demo title="含描述信息">
                 <div slot="demo">
@@ -43,7 +43,7 @@
                 <div slot="desc">
                     <p>自定义<code>&lt;slot name="desc"&gt;</code>描述内容。</p>
                 </div>
-                <i-code lang="html" slot="code">{{ code.desc }}</i-code>
+                <i-code :title="title" lang="html" slot="code">{{ code.desc }}</i-code>
             </Demo>
             <Demo title="图标">
                 <div slot="demo">
@@ -80,7 +80,7 @@
                 <div slot="desc">
                     <p>根据 type 属性自动添加不同图标，或者自定义图标 slot 。</p>
                 </div>
-                <i-code lang="html" slot="code">{{ code.icon }}</i-code>
+                <i-code :title="title" lang="html" slot="code">{{ code.icon }}</i-code>
             </Demo>
             <Demo title="可关闭">
                 <div slot="demo">
@@ -97,7 +97,7 @@
                 <div slot="desc">
                     <p>显示关闭按钮，点击可关闭提示，也可以自定义关闭 slot 。</p>
                 </div>
-                <i-code lang="html" slot="code">{{ code.close }}</i-code>
+                <i-code :title="title" lang="html" slot="code">{{ code.close }}</i-code>
             </Demo>
             <Demo title="顶部公告">
                 <div slot="demo">
@@ -107,7 +107,7 @@
                 <div slot="desc">
                     <p>设置属性 <code>banner</code> 可以应用顶部公告的样式。</p>
                 </div>
-                <i-code lang="html" slot="code">{{ code.banner }}</i-code>
+                <i-code :title="title" lang="html" slot="code">{{ code.banner }}</i-code>
             </Demo>
             <div class="api">
                 <Anchor title="API" h2></Anchor>

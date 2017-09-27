@@ -18,7 +18,7 @@
                 <div slot="desc">
                     <p>Use v-model to enable a two-way binding.</p>
                 </div>
-                <i-code lang="html" slot="code">{{ code.single }}</i-code>
+                <i-code :title="title" lang="html" slot="code">{{ code.single }}</i-code>
             </Demo>
             <Demo title="Combination">
                 <div slot="demo">
@@ -47,7 +47,7 @@
                 <div slot="desc">
                     <p>Use <code>RadioGroup</code> to combine a set of exclusive selection. When using <code>RadioGroup</code>, you shall set <code>label</code> to <code>Radio</code> to enable an auto judgement. The content of each Radio can be customized. If not set, it'll use label's value by default.</p>
                 </div>
-                <i-code lang="html" slot="code">{{ code.group }}</i-code>
+                <i-code :title="title" lang="html" slot="code">{{ code.group }}</i-code>
             </Demo>
             <Demo title="Disabled">
                 <div slot="demo">
@@ -63,7 +63,7 @@
                 <div slot="desc">
                     <p>Set <code>disabled</code> prop to disable a Radio.</p>
                 </div>
-                <i-code lang="html" slot="code">{{ code.disabled }}</i-code>
+                <i-code :title="title" lang="html" slot="code">{{ code.disabled }}</i-code>
             </Demo>
             <Demo title="Verticality">
                 <div slot="demo">
@@ -85,7 +85,7 @@
                 <div slot="desc">
                     <p>Set <code>vertical</code> prop can let Radio-gruop be displayed vertically. It will not work in button type.</p>
                 </div>
-                <i-code lang="html" slot="code">{{ code.vertical }}</i-code>
+                <i-code :title="title" lang="html" slot="code">{{ code.vertical }}</i-code>
             </Demo>
             <Demo title="Button Type">
                 <div slot="demo">
@@ -114,7 +114,7 @@
                 <div slot="desc">
                     <p>When using RadioGroup, you can set <code>type</code> to button to apply a button type.</p>
                 </div>
-                <i-code lang="html" slot="code">{{ code.button }}</i-code>
+                <i-code :title="title" lang="html" slot="code">{{ code.button }}</i-code>
             </Demo>
             <Demo title="Size">
                 <div slot="demo">
@@ -143,7 +143,7 @@
                 <div slot="desc">
                     <p>You can adjust the size of the button by setting <code>size</code> to <code>large</code> or <code>small</code>. The default is medium.</p>
                 </div>
-                <i-code lang="html" slot="code">{{ code.size }}</i-code>
+                <i-code :title="title" lang="html" slot="code">{{ code.size }}</i-code>
             </Demo>
             <div class="api">
                 <Anchor title="API" h2></Anchor>

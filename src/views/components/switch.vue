@@ -13,7 +13,7 @@
                 <div slot="desc">
                     <p>基本用法，状态切换时会触发事件。</p>
                 </div>
-                <i-code lang="html" slot="code">{{ code.base }}</i-code>
+                <i-code :title="title" lang="html" slot="code">{{ code.base }}</i-code>
             </Demo>
             <Demo title="尺寸">
                 <div slot="demo">
@@ -24,7 +24,7 @@
                 <div slot="desc">
                     <p>设置<code>size</code>为 <code>large</code> 或 <code>small</code> 使用大号和小号的开关。</p>
                 </div>
-                <i-code lang="html" slot="code">{{ code.size }}</i-code>
+                <i-code :title="title" lang="html" slot="code">{{ code.size }}</i-code>
             </Demo>
             <Demo title="文字和图标">
                 <div slot="demo">
@@ -49,7 +49,7 @@
                 <div slot="desc">
                     <p>自定义内容，建议如果使用2个汉字，将开关尺寸设置为 large。</p>
                 </div>
-                <i-code lang="html" slot="code">{{ code.custom }}</i-code>
+                <i-code :title="title" lang="html" slot="code">{{ code.custom }}</i-code>
             </Demo>
             <Demo title="不可用">
                 <div slot="demo">
@@ -59,7 +59,7 @@
                 <div slot="desc">
                     <p>禁用开关。</p>
                 </div>
-                <i-code lang="html" slot="code">{{ code.disabled }}</i-code>
+                <i-code :title="title" lang="html" slot="code">{{ code.disabled }}</i-code>
             </Demo>
             <div class="api">
                 <Anchor title="API" h2></Anchor>

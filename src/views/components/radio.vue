@@ -18,7 +18,7 @@
                 <div slot="desc">
                     <p>使用 v-model 可以双向绑定数据。</p>
                 </div>
-                <i-code lang="html" slot="code">{{ code.single }}</i-code>
+                <i-code :title="title" lang="html" slot="code">{{ code.single }}</i-code>
             </Demo>
             <Demo title="组合使用">
                 <div slot="demo">
@@ -47,7 +47,7 @@
                 <div slot="desc">
                     <p>使用<code>RadioGroup</code>实现一组互斥的选项组。在组合使用时，<code>Radio</code> 使用 <code>label</code> 来自动判断。每个 Radio 的内容可以自定义，如不填写则默认使用 label 的值。</p>
                 </div>
-                <i-code lang="html" slot="code">{{ code.group }}</i-code>
+                <i-code :title="title" lang="html" slot="code">{{ code.group }}</i-code>
             </Demo>
             <Demo title="不可用">
                 <div slot="demo">
@@ -63,7 +63,7 @@
                 <div slot="desc">
                     <p>通过设置<code>disabled</code>属性来禁用单选框。</p>
                 </div>
-                <i-code lang="html" slot="code">{{ code.disabled }}</i-code>
+                <i-code :title="title" lang="html" slot="code">{{ code.disabled }}</i-code>
             </Demo>
             <Demo title="垂直">
                 <div slot="demo">
@@ -85,7 +85,7 @@
                 <div slot="desc">
                     <p>设置属性 <code>vertical</code> 可以垂直显示，按钮样式下无效。</p>
                 </div>
-                <i-code lang="html" slot="code">{{ code.vertical }}</i-code>
+                <i-code :title="title" lang="html" slot="code">{{ code.vertical }}</i-code>
             </Demo>
             <Demo title="按钮样式">
                 <div slot="demo">
@@ -114,7 +114,7 @@
                 <div slot="desc">
                     <p>组合使用时可以设置属性<code>type</code>为 button 来应用按钮的样式。</p>
                 </div>
-                <i-code lang="html" slot="code">{{ code.button }}</i-code>
+                <i-code :title="title" lang="html" slot="code">{{ code.button }}</i-code>
             </Demo>
             <Demo title="尺寸">
                 <div slot="demo">
@@ -143,7 +143,7 @@
                 <div slot="desc">
                     <p>通过设置属性<code>size</code>为<code>large</code>或<code>small</code>将按钮样式设置为大和小尺寸，不设置为默认(中)尺寸。</p>
                 </div>
-                <i-code lang="html" slot="code">{{ code.size }}</i-code>
+                <i-code :title="title" lang="html" slot="code">{{ code.size }}</i-code>
             </Demo>
             <div class="api">
                 <Anchor title="API" h2></Anchor>

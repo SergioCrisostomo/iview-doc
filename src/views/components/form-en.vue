@@ -27,7 +27,7 @@
                 <div slot="desc">
                     <p>Set  <code>inline</code> prop to let Form arrange vertically.</p>
                 </div>
-                <i-code lang="html" slot="code">{{ code.inline }}</i-code>
+                <i-code :title="title" lang="html" slot="code">{{ code.inline }}</i-code>
             </Demo>
             <Demo title="Form Control">
                 <div slot="demo">
@@ -90,7 +90,7 @@
                     <p>Setting <code>label</code> prop to <code>FormItem</code> can display the label of the form. <code>label-width</code> needs to be set on Form.</p>
                     <p>Set the property <code>label-for</code> to <code>FormItem</code>, and the <code>element-id</code> property to component, it will be focused when click label.</p>
                 </div>
-                <i-code lang="html" slot="code">{{ code.item }}</i-code>
+                <i-code :title="title" lang="html" slot="code">{{ code.item }}</i-code>
             </Demo>
             <Demo title="Alignment">
                 <div slot="demo">
@@ -131,7 +131,7 @@
                 <div slot="desc">
                     <p>Set <code>label-position</code> prop to change the position of the label. Optional: left, right, top.</p>
                 </div>
-                <i-code lang="html" slot="code">{{ code.position }}</i-code>
+                <i-code :title="title" lang="html" slot="code">{{ code.position }}</i-code>
             </Demo>
             <Demo title="Form Validation">
                 <div slot="demo">
@@ -191,7 +191,7 @@
                     <p>The validation module of Form is based on <a href="https://github.com/yiminghe/async-validator" target="_blank"><Icon type="social-github"></Icon> async-validator</a>. Set <code>rules</code> to Form and set <code>prop</code> prop to FormItem that needs to be validated.</p>
                     <p>For complete validation rules, please visit async-validator project site.</p>
                 </div>
-                <i-code lang="html" slot="code">{{ code.validate }}</i-code>
+                <i-code :title="title" lang="html" slot="code">{{ code.validate }}</i-code>
             </Demo>
             <Demo title="Custom Validation">
                 <div slot="demo">
@@ -214,7 +214,7 @@
                 <div slot="desc">
                     <p>You can customize your own rule to complete complex validation like data that needs to be validated on server side. The demo shows a rechecking on password and a simulation of async validation.</p>
                 </div>
-                <i-code lang="html" slot="code">{{ code.custom }}</i-code>
+                <i-code :title="title" lang="html" slot="code">{{ code.custom }}</i-code>
             </Demo>
             <Demo title="Dynamic Adding / Removing">
                 <div slot="demo">
@@ -252,7 +252,7 @@
                     <p>When setting prop prop dynamiclly, FormItem will rely on its parent Form's model to get its content. Details on demo code.</p>
                     <p>You can set required, error or some other props on FormItem. Details on API Doc.</p>
                 </div>
-                <i-code lang="html" slot="code">{{ code.dynamic }}</i-code>
+                <i-code :title="title" lang="html" slot="code">{{ code.dynamic }}</i-code>
             </Demo>
             <div class="api">
                 <Anchor title="API" h2></Anchor>

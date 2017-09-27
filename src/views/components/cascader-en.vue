@@ -19,7 +19,7 @@
                     <p>Cascader has a strict requirement on data. Please follow the demo to use <code>data</code>. Each piece of data should contains at least two items: <code>value</code>, <code>label</code>. Its subset is called <code>children</code>.</p>
                     <p><code>value</code> is an array stored selected data's value, for example:  <code>['beijing', 'gugong']</code>. It will sorted by cascader's order. Use <code>v-model</code> to enable a two-way binding.</p>
                 </div>
-                <i-code lang="html" slot="code">{{ code.base }}</i-code>
+                <i-code :title="title" lang="html" slot="code">{{ code.base }}</i-code>
             </Demo>
             <Demo title="Default Value">
                 <div slot="demo">
@@ -28,7 +28,7 @@
                 <div slot="desc">
                     <p>Let the component select default selected data on initialization by setting default <code>value</code> prop.</p>
                 </div>
-                <i-code lang="html" slot="code">{{ code.value }}</i-code>
+                <i-code :title="title" lang="html" slot="code">{{ code.value }}</i-code>
             </Demo>
             <Demo title="Move In and Spread">
                 <div slot="demo">
@@ -37,7 +37,7 @@
                 <div slot="desc">
                     <p>Set <code>trigger</code> to <code>hover</code> to spread the subset when mouse hovers on.</p>
                 </div>
-                <i-code lang="html" slot="code">{{ code.trigger }}</i-code>
+                <i-code :title="title" lang="html" slot="code">{{ code.trigger }}</i-code>
             </Demo>
             <Demo title="Customize Display">
                 <div slot="demo">
@@ -49,7 +49,7 @@
                 <div slot="desc">
                     <p>Customize display content by setting slot. You can not only use it on input box.</p>
                 </div>
-                <i-code lang="html" slot="code">{{ code.slot }}</i-code>
+                <i-code :title="title" lang="html" slot="code">{{ code.slot }}</i-code>
             </Demo>
             <Demo title="Disable">
                 <div slot="demo">
@@ -66,7 +66,7 @@
                     <p>Disable the component by setting <code>disabled</code> prop.</p>
                     <p>Set <code>disabled: true</code> prop to a certain item can disable it.</p>
                 </div>
-                <i-code lang="html" slot="code">{{ code.disabled }}</i-code>
+                <i-code :title="title" lang="html" slot="code">{{ code.disabled }}</i-code>
             </Demo>
             <Demo title="Change When Selected">
                 <div slot="demo">
@@ -75,7 +75,7 @@
                 <div slot="desc">
                     <p>Set <code>change-on-select</code> to allow user select any level.</p>
                 </div>
-                <i-code lang="html" slot="code">{{ code.select }}</i-code>
+                <i-code :title="title" lang="html" slot="code">{{ code.select }}</i-code>
             </Demo>
             <Demo title="Customize Selected Items.">
                 <div slot="demo">
@@ -85,7 +85,7 @@
                     <p>You can use <code>render-format</code> which accepts a function to customize displayed result.</p>
                     <p>The first argument <code>labels</code> is current selected label set, the second argument <code>selectedData</code> is current selected data set. You can make what you want to display by combining them.</p>
                 </div>
-                <i-code lang="html" slot="code">{{ code.format }}</i-code>
+                <i-code :title="title" lang="html" slot="code">{{ code.format }}</i-code>
             </Demo>
             <Demo title="Size">
                 <div slot="demo">
@@ -98,7 +98,7 @@
                 <div slot="desc">
                     <p>Set <code>size</code> prop to <code>large</code> or <code>small</code> to set the input box to large or small size. Default size is medium.</p>
                 </div>
-                <i-code lang="html" slot="code">{{ code.size }}</i-code>
+                <i-code :title="title" lang="html" slot="code">{{ code.size }}</i-code>
             </Demo>
             <Demo title="Load Options Lazily">
                 <div slot="demo">
@@ -108,7 +108,7 @@
                     <p>Load options lazily with <code>load-data</code>. You need add <code>loading</code> to your data to show whether it is loading.</p>
                     <p>The second arguments of load-data is callback function, if you run it, the children options will be opened.</p>
                 </div>
-                <i-code lang="html" slot="code">{{ code.loadData }}</i-code>
+                <i-code :title="title" lang="html" slot="code">{{ code.loadData }}</i-code>
             </Demo>
             <Demo title="Filterable">
                 <div slot="demo">
@@ -118,7 +118,7 @@
                     <p>Search and select options directly with <code>filterable</code>.</p>
                     <p>Now, it doesn't support search on server.</p>
                 </div>
-                <i-code lang="html" slot="code">{{ code.filterable }}</i-code>
+                <i-code :title="title" lang="html" slot="code">{{ code.filterable }}</i-code>
             </Demo>
             <div class="api">
                 <Anchor title="API" h2></Anchor>

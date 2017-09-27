@@ -17,7 +17,7 @@
                 <div slot="desc">
                     <p>Progress in different status. When percent reaches 100, the status will be automatically set to success.</p>
                 </div>
-                <i-code lang="html" slot="code">{{ code.base }}</i-code>
+                <i-code :title="title" lang="html" slot="code">{{ code.base }}</i-code>
             </Demo>
             <Demo title="Vertical">
                 <div slot="demo">
@@ -32,7 +32,7 @@
                 <div slot="desc">
                     <p>Set the property <code>vertical</code> will be displayed in the vertical direction.</p>
                 </div>
-                <i-code lang="html" slot="code">{{ code.vertical }}</i-code>
+                <i-code :title="title" lang="html" slot="code">{{ code.vertical }}</i-code>
             </Demo>
             <Demo title="Use with External Component">
                 <div slot="demo">
@@ -45,7 +45,7 @@
                 <div slot="desc">
                     <p>You can realise a dynamic effect by combining data and controlling logic.</p>
                 </div>
-                <i-code lang="html" slot="code">{{ code.percent }}</i-code>
+                <i-code :title="title" lang="html" slot="code">{{ code.percent }}</i-code>
             </Demo>
             <Demo title="Custom Style">
                 <div slot="demo">
@@ -58,7 +58,7 @@
                 <div slot="desc">
                     <p>Change Progress's style by customize <code>slot</code> and <code>stroke-width</code> prop.</p>
                 </div>
-                <i-code lang="html" slot="code">{{ code.custom }}</i-code>
+                <i-code :title="title" lang="html" slot="code">{{ code.custom }}</i-code>
             </Demo>
             <div class="api">
                 <Anchor title="API" h2></Anchor>

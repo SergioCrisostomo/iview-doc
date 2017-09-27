@@ -25,7 +25,7 @@
                 <div slot="desc">
                     <p>You can spread multiple panels simultaneously by default. You can also set which one to be spread.</p>
                 </div>
-                <i-code lang="html" slot="code">{{ code.base }}</i-code>
+                <i-code :title="title" lang="html" slot="code">{{ code.base }}</i-code>
             </Demo>
             <Demo title="Accordion">
                 <div slot="demo">
@@ -47,7 +47,7 @@
                 <div slot="desc">
                     <p>Enable accordion effect by setting <code>accordion</code> prop. In this mode, you can only spread one panel each time.</p>
                 </div>
-                <i-code lang="html" slot="code">{{ code.accordion }}</i-code>
+                <i-code :title="title" lang="html" slot="code">{{ code.accordion }}</i-code>
             </Demo>
             <Demo title="Panel Nesting">
                 <div slot="demo">
@@ -81,7 +81,7 @@
                 <div slot="desc">
                     <p>Collapse can be nested.</p>
                 </div>
-                <i-code lang="html" slot="code">{{ code.nest }}</i-code>
+                <i-code :title="title" lang="html" slot="code">{{ code.nest }}</i-code>
             </Demo>
             <div class="api">
                 <Anchor title="API" h2></Anchor>

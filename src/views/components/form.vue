@@ -27,7 +27,7 @@
                 <div slot="desc">
                     <p>设置属性 <code>inline</code>，表单元素可以水平排列。</p>
                 </div>
-                <i-code lang="html" slot="code">{{ code.inline }}</i-code>
+                <i-code :title="title" lang="html" slot="code">{{ code.inline }}</i-code>
             </Demo>
             <Demo title="表单控件">
                 <div slot="demo">
@@ -90,7 +90,7 @@
                     <p>给 <code>FormItem</code> 设置属性 <code>label</code> 可以显示表单域的标签，需要给 Form 设置 <code>label-width</code>。</p>
                     <p>给 <code>FormItem</code> 设置属性 <code>label-for</code> 可以指定原生的 label 标签的 for 属性，配合设置控件的 <code>element-id</code> 属性，可以点击 label 时聚焦控件。</p>
                 </div>
-                <i-code lang="html" slot="code">{{ code.item }}</i-code>
+                <i-code :title="title" lang="html" slot="code">{{ code.item }}</i-code>
             </Demo>
             <Demo title="对齐方式">
                 <div slot="demo">
@@ -131,7 +131,7 @@
                 <div slot="desc">
                     <p>设置属性 <code>label-position</code>，可以改变表单域标签的位置，left 为左对齐，right 为右对齐，top 会置于表单域顶部。</p>
                 </div>
-                <i-code lang="html" slot="code">{{ code.position }}</i-code>
+                <i-code :title="title" lang="html" slot="code">{{ code.position }}</i-code>
             </Demo>
             <Demo title="表单验证">
                 <div slot="demo">
@@ -191,7 +191,7 @@
                     <p>Form 组件基于 <a href="https://github.com/yiminghe/async-validator" target="_blank"><Icon type="social-github"></Icon> async-validator</a> 实现的数据验证，给 Form 设置属性 <code>rules</code>，同时给需要验证的 FormItem 设置属性 <code>prop</code> 指向对应字段即可。</p>
                     <p>完整的验证规则请参照开源项目 async-validator。</p>
                 </div>
-                <i-code lang="html" slot="code">{{ code.validate }}</i-code>
+                <i-code :title="title" lang="html" slot="code">{{ code.validate }}</i-code>
             </Demo>
             <Demo title="自定义验证">
                 <div slot="demo">
@@ -214,7 +214,7 @@
                 <div slot="desc">
                     <p>可以完全自定义验证规则来完成更复杂的验证，比如某些数据需要在服务端验证时。示例展示的是密码的二次确认及模拟的一个异步验证。</p>
                 </div>
-                <i-code lang="html" slot="code">{{ code.custom }}</i-code>
+                <i-code :title="title" lang="html" slot="code">{{ code.custom }}</i-code>
             </Demo>
             <Demo title="动态增减表单项">
                 <div slot="demo">
@@ -252,7 +252,7 @@
                     <p>动态设置 FormItem 的 prop 属性时，会依据上层的 Form 组件的 model 来获取，查看示例代码。</p>
                     <p>FormItem 还可以独立设置 required、error 等属性，详见 API。</p>
                 </div>
-                <i-code lang="html" slot="code">{{ code.dynamic }}</i-code>
+                <i-code :title="title" lang="html" slot="code">{{ code.dynamic }}</i-code>
             </Demo>
             <div class="api">
                 <Anchor title="API" h2></Anchor>

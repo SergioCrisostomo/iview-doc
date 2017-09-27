@@ -53,7 +53,7 @@
                 <div slot="desc">
                     <p>最基本用法，点击上传，一次选择一个文件。</p>
                 </div>
-                <i-code lang="html" slot="code">{{ code.select }}</i-code>
+                <i-code :title="title" lang="html" slot="code">{{ code.select }}</i-code>
             </Demo>
             <Demo title="多选">
                 <div slot="demo">
@@ -66,7 +66,7 @@
                 <div slot="desc">
                     <p>设置属性 <code>multiple</code>，可以选择多个文件。</p>
                 </div>
-                <i-code lang="html" slot="code">{{ code.multiple }}</i-code>
+                <i-code :title="title" lang="html" slot="code">{{ code.multiple }}</i-code>
             </Demo>
             <Demo title="手动上传">
                 <div slot="demo">
@@ -80,7 +80,7 @@
                 <div slot="desc">
                     <p>绑定 <code>before-upload</code>，并返回<code>false</code>，可以阻止默认上传流程，手动控制文件上传。</p>
                 </div>
-                <i-code lang="html" slot="code">{{ code.manual }}</i-code>
+                <i-code :title="title" lang="html" slot="code">{{ code.manual }}</i-code>
             </Demo>
             <Demo title="拖拽上传">
                 <div slot="demo">
@@ -97,7 +97,7 @@
                 <div slot="desc">
                     <p>设置属性 <code>type</code> 为 <code>drag</code>，可以拖拽上传。</p>
                 </div>
-                <i-code lang="html" slot="code">{{ code.drag }}</i-code>
+                <i-code :title="title" lang="html" slot="code">{{ code.drag }}</i-code>
             </Demo>
             <Demo title="自定义上传列表">
                 <div slot="demo">
@@ -149,7 +149,7 @@
                         <li>每个文件大小不超过 2M。</li>
                     </ul>
                 </div>
-                <i-code lang="html" slot="code">{{ code.list }}</i-code>
+                <i-code :title="title" lang="html" slot="code">{{ code.list }}</i-code>
             </Demo>
             <div class="api">
                 <Anchor title="API" h2></Anchor>

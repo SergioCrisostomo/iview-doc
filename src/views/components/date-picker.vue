@@ -26,7 +26,7 @@
                         <p>设置属性 <code>type</code> 为 <code>date</code> 或 <code>daterange</code> 分别显示<strong>选择单日</strong>和<strong>选择范围</strong>类型。</p>
                         <p>设置属性 <code>placement</code> 可以更改选择器出现的方向，与 Poptip 和 Tooltip 配置一致，支持 12 个方向，详见 API。</p>
                     </div>
-                    <i-code lang="html" slot="code">{{ code.base }}</i-code>
+                    <i-code :title="title" lang="html" slot="code">{{ code.base }}</i-code>
                 </Demo>
                 <Demo title="快捷方式">
                     <div slot="demo">
@@ -44,7 +44,7 @@
                         <p>其中 <strong>value</strong> 为函数，必须返回一个日期，如果是 daterange 类型，需要返回一个数组。</p>
                         <p>value 接收任何正确的日期格式，比如 2016-12-24 或 12/24/16 都是正确的。</p>
                     </div>
-                    <i-code lang="html" slot="code">{{ code.shortcuts }}</i-code>
+                    <i-code :title="title" lang="html" slot="code">{{ code.shortcuts }}</i-code>
                 </Demo>
                 <Demo title="日期格式">
                     <div slot="demo">
@@ -61,7 +61,7 @@
                         <p>设置属性 <code>format</code> 可以改变日期的显示格式，详见 <a href="javascript:void(0)" @click="handleShowDate"><Icon type="information-circled"></Icon> Date</a>。</p>
                         <p>注意，format 只是改变显示的格式，并非改变 value 值。</p>
                     </div>
-                    <i-code lang="html" slot="code">{{ code.format }}</i-code>
+                    <i-code :title="title" lang="html" slot="code">{{ code.format }}</i-code>
                 </Demo>
                 <Demo title="日期时间选择">
                     <div slot="demo">
@@ -77,7 +77,7 @@
                         <p>设置属性 <code>type</code> 为 <code>datetime</code> 或 <code>datetimerange</code> 可以选择时间。</p>
                         <p>设置 format 并且忽略秒，可以只设置小时和分钟维度。</p>
                     </div>
-                    <i-code lang="html" slot="code">{{ code.datetime }}</i-code>
+                    <i-code :title="title" lang="html" slot="code">{{ code.datetime }}</i-code>
                 </Demo>
                 <Demo title="年和月">
                     <div slot="demo">
@@ -93,7 +93,7 @@
                     <div slot="desc">
                         <p>设置属性 <code>type</code> 为 <code>year</code> 或 <code>month</code> 可以使用选择年或月的功能。</p>
                     </div>
-                    <i-code lang="html" slot="code">{{ code.type }}</i-code>
+                    <i-code :title="title" lang="html" slot="code">{{ code.type }}</i-code>
                 </Demo>
                 <Demo title="不可选日期">
                     <div slot="demo">
@@ -110,7 +110,7 @@
                         <p>设置属性 <code>options</code> 对象中的 <code>disabledDate</code> 可以设置不可选择的日期。</p>
                         <p>disabledDate 是函数，参数为当前的日期，需要返回 Boolean 是否禁用这天。</p>
                     </div>
-                    <i-code lang="html" slot="code">{{ code.disabled }}</i-code>
+                    <i-code :title="title" lang="html" slot="code">{{ code.disabled }}</i-code>
                 </Demo>
                 <Demo title="带有确认操作">
                     <div slot="demo">
@@ -127,7 +127,7 @@
                         <p>设置属性 <code>confirm</code>，选择日期后，选择器不会主动关闭，需用户确认后才可关闭。</p>
                         <p>确认按钮并没有影响日期的正常选择。</p>
                     </div>
-                    <i-code lang="html" slot="code">{{ code.confirm }}</i-code>
+                    <i-code :title="title" lang="html" slot="code">{{ code.confirm }}</i-code>
                 </Demo>
                 <Demo title="手动控制组件">
                     <div slot="demo">
@@ -149,7 +149,7 @@
                     <div slot="desc">
                         <p>对于一些定制化的场景，可以使用 slot 配合参数 <code>open</code> 及事件来手动控制组件的显示状态，详见示例和 API。</p>
                     </div>
-                    <i-code lang="html" slot="code">{{ code.slot }}</i-code>
+                    <i-code :title="title" lang="html" slot="code">{{ code.slot }}</i-code>
                 </Demo>
                 <Demo title="尺寸">
                     <div slot="demo">
@@ -168,7 +168,7 @@
                     <div slot="desc">
                         <p>通过设置属性 <code>size</code> 为 <code>large</code> 或 <code>small</code> 可以调整选择器尺寸为大或小，默认不填为中。</p>
                     </div>
-                    <i-code lang="html" slot="code">{{ code.size }}</i-code>
+                    <i-code :title="title" lang="html" slot="code">{{ code.size }}</i-code>
                 </Demo>
                 <div class="api">
                     <Anchor title="API" h2></Anchor>

@@ -13,11 +13,11 @@
             </ul>
             <Anchor title="安装" h2></Anchor>
             <p>使用 npm</p>
-            <i-code lang="auto" bg>{{ code.introduce.install }}</i-code>
+            <i-code :title="title" lang="auto" bg>{{ code.introduce.install }}</i-code>
             <p>或使用 &lt;script&gt; 全局引用</p>
-            <i-code lang="html" bg>{{ code.introduce.script }}</i-code>
+            <i-code :title="title" lang="html" bg>{{ code.introduce.script }}</i-code>
             <Anchor title="示例" h2></Anchor>
-            <i-code lang="html" bg>{{ code.introduce.demo }}</i-code>
+            <i-code :title="title" lang="html" bg>{{ code.introduce.demo }}</i-code>
             <p>效果</p>
             <Slider v-model="value" range></Slider>
             <Anchor title="版本" h2></Anchor>

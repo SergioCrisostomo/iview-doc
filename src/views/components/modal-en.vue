@@ -36,7 +36,7 @@
                     <p>Use v-model to enable two-way binding.</p>
                     <p>Tap <code>ESC</code> button can close it too.</p>
                 </div>
-                <i-code lang="html" slot="code">{{ code.base }}</i-code>
+                <i-code :title="title" lang="html" slot="code">{{ code.base }}</i-code>
             </Demo>
             <Demo title="Custom Style">
                 <div slot="demo">
@@ -83,7 +83,7 @@
                     <p>Modal component provieds a set of custom style API and Slots which are very flexible. You can control any part of the Modal like header, footer and close button.</p>
                     <p>You can realise complex functions by interact with other components. It satisfies most business scenarios.</p>
                 </div>
-                <i-code lang="html" slot="code">{{ code.custom }}</i-code>
+                <i-code :title="title" lang="html" slot="code">{{ code.custom }}</i-code>
             </Demo>
             <Demo title="Asynchronous Close">
                 <div slot="demo">
@@ -99,7 +99,7 @@
                 <div slot="desc">
                     <p>After Setting <code>loading</code> prop to <code>Modal</code>, Modal will not disappear automatically and will show loading status. It needs to be closed manually. This is often used on form submission.</p>
                 </div>
-                <i-code lang="html" slot="code">{{ code.async }}</i-code>
+                <i-code :title="title" lang="html" slot="code">{{ code.async }}</i-code>
             </Demo>
             <Demo title="Disable Close">
                 <div slot="demo">
@@ -125,7 +125,7 @@
                 <div slot="desc">
                     <p>You can disable closing or mask-closing.</p>
                 </div>
-                <i-code lang="html" slot="code">{{ code.close }}</i-code>
+                <i-code :title="title" lang="html" slot="code">{{ code.close }}</i-code>
             </Demo>
             <Demo title="Custom Position">
                 <div slot="demo">
@@ -151,7 +151,7 @@
                 <div slot="desc">
                     <p>You can customize Modal's style and its Wrap's class name to realise many custom styles like vertical center.</p>
                 </div>
-                <i-code lang="html" slot="code">{{ code.position }}</i-code>
+                <i-code :title="title" lang="html" slot="code">{{ code.position }}</i-code>
             </Demo>
             <Anchor title="Instantiation Usage" h3></Anchor>
             <p>Besides normal component usages mentioned above, iView has encapsulated some instance methods elaborately to create one-off light Modal.</p>
@@ -166,7 +166,7 @@
                 <div slot="desc">
                     <p>Four basic Modals which only provides a confirm button.</p>
                 </div>
-                <i-code lang="html" slot="code">{{ code.baseInstance }}</i-code>
+                <i-code :title="title" lang="html" slot="code">{{ code.baseInstance }}</i-code>
             </Demo>
             <Demo title="Confirm Modal">
                 <div slot="demo">
@@ -177,7 +177,7 @@
                 <div slot="desc">
                     <p>Popup the confirm Modal rapidly. You can customize the text on the button or close the Modal asynchronously.</p>
                 </div>
-                <i-code lang="html" slot="code">{{ code.confirm }}</i-code>
+                <i-code :title="title" lang="html" slot="code">{{ code.confirm }}</i-code>
             </Demo>
             <Demo title="Custom Content">
                 <div slot="demo">
@@ -193,7 +193,7 @@
                     <p>No more type limitation after using render, and content will be invalid.</p>
                     <p><study-render></study-render></p>
                 </div>
-                <i-code lang="html" slot="code">{{ code.render }}</i-code>
+                <i-code :title="title" lang="html" slot="code">{{ code.render }}</i-code>
             </Demo>
             <div class="api">
                 <Anchor title="API" h2></Anchor>

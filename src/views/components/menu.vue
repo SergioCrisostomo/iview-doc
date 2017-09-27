@@ -50,7 +50,7 @@
                     <p>通过设置属性 <code>theme</code> 为 <code>light</code>、<code>dark</code>、<code>primary</code> 可以选择主题。</p>
                     <p>通过事件 <code>on-select</code> 可以得到点击菜单的 name 值，从而控制页面路由或自定义操作。</p>
                 </div>
-                <i-code lang="html" slot="code">{{ code.base }}</i-code>
+                <i-code :title="title" lang="html" slot="code">{{ code.base }}</i-code>
             </Demo>
             <Demo title="侧栏导航" vertical hide-code>
                 <div slot="demo">
@@ -177,7 +177,7 @@
                     <p>设置属性 <code>accordion</code> 可以开启手风琴模式，每次只能展开一个子菜单。</p>
                     <p>通过设置属性 <code>theme</code> 为 <code>light</code>、<code>dark</code> 可以选择主题，侧栏菜单不支持 primary 主题。</p>
                 </div>
-                <i-code lang="html" slot="code">{{ code.vertical }}</i-code>
+                <i-code :title="title" lang="html" slot="code">{{ code.vertical }}</i-code>
             </Demo>
             <Demo title="分组" vertical hide-code>
                 <div slot="demo">
@@ -217,7 +217,7 @@
                         <li> <code>Submenu</code> 只能用在 <code>Menu</code> 内，不能用在 <code>MenuGroup</code> 和 <code>MenuItem</code> 内。</li>
                     </ul>
                 </div>
-                <i-code lang="html" slot="code">{{ code.group }}</i-code>
+                <i-code :title="title" lang="html" slot="code">{{ code.group }}</i-code>
             </Demo>
             <div class="api">
                 <Anchor title="API" h2></Anchor>

@@ -21,7 +21,7 @@
                 <div slot="desc">
                     <p>Basic usage. You can use <code>v-model</code> to enable a two-way bingding on data.</p>
                 </div>
-                <i-code lang="html" slot="code">{{ code.base }}</i-code>
+                <i-code :title="title" lang="html" slot="code">{{ code.base }}</i-code>
             </Demo>
             <Demo title="Alpha">
                 <div slot="demo">
@@ -30,7 +30,7 @@
                 <div slot="desc">
                     <p>Add the property <code>alpha</code> to select a color with alpha channel.</p>
                 </div>
-                <i-code lang="html" slot="code">{{ code.alpha }}</i-code>
+                <i-code :title="title" lang="html" slot="code">{{ code.alpha }}</i-code>
             </Demo>
             <Demo title="Color Presets">
                 <div slot="demo">
@@ -46,7 +46,7 @@
                 <div slot="desc">
                     <p>Add the property <code>recommend</code> to display the recommended color presets, or set <code>colors</code> to customize the default colors.</p>
                 </div>
-                <i-code lang="html" slot="code">{{ code.colors }}</i-code>
+                <i-code :title="title" lang="html" slot="code">{{ code.colors }}</i-code>
             </Demo>
             <Demo title="Size">
                 <div slot="demo">
@@ -65,7 +65,7 @@
                 <div slot="desc">
                     <p>There are three size of ColorPicker: large, medium(default), small.</p>
                 </div>
-                <i-code lang="html" slot="code">{{ code.size }}</i-code>
+                <i-code :title="title" lang="html" slot="code">{{ code.size }}</i-code>
             </Demo>
 
             <div class="api">

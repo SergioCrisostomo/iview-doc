@@ -22,7 +22,7 @@
                     <p>按钮类型有：默认按钮、主按钮、幽灵按钮、虚线按钮、文字按钮以及四种颜色按钮。</p>
                     <p>通过设置<code>type</code>为<code>primary</code>、<code>ghost</code>、<code>dashed</code>、<code>text</code>、<code>info</code>、<code>success</code>、<code>warning</code>、<code>error</code>创建不同样式的按钮，不设置为默认样式。</p>
                 </div>
-                <i-code lang="html" slot="code">{{ code.type }}</i-code>
+                <i-code :title="title" lang="html" slot="code">{{ code.type }}</i-code>
             </Demo>
             <Demo title="图标按钮及按钮形状">
                 <div slot="demo">
@@ -41,7 +41,7 @@
                     <p>使用<code>Button</code>的<code>icon</code>属性，图标位置将在最左边，如果需要自定义位置，需使用<code>Icon</code>组件。</p>
                     <p>通过设置<code>shape</code>属性为<code>circle</code>，可将按钮置为圆的形状。</p>
                 </div>
-                <i-code lang="html" slot="code">{{ code.icon }}</i-code>
+                <i-code :title="title" lang="html" slot="code">{{ code.icon }}</i-code>
             </Demo>
             <Demo title="按钮尺寸">
                 <div slot="demo">
@@ -57,7 +57,7 @@
                     <p>按钮有三种尺寸：大、默认（中）、小</p>
                     <p>通过设置<code>size</code>为<code>large</code>和<code>small</code>将按钮设置为大和小尺寸，不设置为默认（中）尺寸。</p>
                 </div>
-                <i-code lang="html" slot="code">{{ code.size }}</i-code>
+                <i-code :title="title" lang="html" slot="code">{{ code.size }}</i-code>
             </Demo>
             <Demo title="长按钮">
                 <div slot="demo">
@@ -69,7 +69,7 @@
                     <p>通过设置属性 <code>long</code> 可将按钮宽度设置为 100%，常用于弹窗内操作按钮。</p>
                     <p>使用者也可以直接通过给组件添加 <code>style</code> 来设置更细节的样式，比如定宽。</p>
                 </div>
-                <i-code lang="html" slot="code">{{ code.long }}</i-code>
+                <i-code :title="title" lang="html" slot="code">{{ code.long }}</i-code>
             </Demo>
             <Demo title="不可用状态">
                 <div slot="demo">
@@ -91,7 +91,7 @@
                 <div slot="desc">
                     <p>通过添加<code>disabled</code>属性可将按钮设置为不可用状态。</p>
                 </div>
-                <i-code lang="html" slot="code">{{ code.disabled }}</i-code>
+                <i-code :title="title" lang="html" slot="code">{{ code.disabled }}</i-code>
             </Demo>
             <Demo title="加载中状态">
                 <div slot="demo">
@@ -108,7 +108,7 @@
                 <div slot="desc">
                     <p>通过添加<code>loading</code>属性可以让按钮处于加载中状态，后两个按钮在点击时进入加载状态。</p>
                 </div>
-                <i-code lang="html" slot="code">{{ code.loading }}</i-code>
+                <i-code :title="title" lang="html" slot="code">{{ code.loading }}</i-code>
             </Demo>
             <Demo title="按钮组合">
                 <div slot="demo">
@@ -209,7 +209,7 @@
                     <p>通过设置<code>ButtonGroup</code>的属性<code>size</code>为<code>large</code>和<code>small</code>，可将按钮组尺寸设置为大和小，不设置<code>size</code>，则为默认（中）尺寸。</p>
                     <p>通过设置<code>ButtonGroup</code>的属性<code>shape</code>为<code>circle</code>，可将按钮组形状设置为圆角。</p>
                 </div>
-                <i-code lang="html" slot="code">{{ code.group }}</i-code>
+                <i-code :title="title" lang="html" slot="code">{{ code.group }}</i-code>
             </Demo>
             <Demo title="按钮组纵向排列">
                 <div slot="demo">
@@ -223,7 +223,7 @@
                 <div slot="desc">
                     <p>通过设置<code>ButtonGroup</code>的属性<code>vertical</code>，可以使按钮组纵向排列。</p>
                 </div>
-                <i-code lang="html" slot="code">{{ code.vertical }}</i-code>
+                <i-code :title="title" lang="html" slot="code">{{ code.vertical }}</i-code>
             </Demo>
             <div class="api">
                 <Anchor title="API" h2></Anchor>

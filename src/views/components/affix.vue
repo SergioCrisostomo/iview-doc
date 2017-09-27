@@ -26,7 +26,7 @@
                 <div slot="desc">
                     <p>简单使用，当元素不可见时，直接固定在最顶端。</p>
                 </div>
-                <i-code lang="html" slot="code">{{ code.base }}</i-code>
+                <i-code :title="title" lang="html" slot="code">{{ code.base }}</i-code>
             </Demo>
             <Demo title="偏移">
                 <div slot="demo">
@@ -37,7 +37,7 @@
                 <div slot="desc">
                     <p>当滚动到一定距离时再固定。</p>
                 </div>
-                <i-code lang="html" slot="code">{{ code.top }}</i-code>
+                <i-code :title="title" lang="html" slot="code">{{ code.top }}</i-code>
             </Demo>
             <Demo title="固定在底部">
                 <div slot="demo">
@@ -49,7 +49,7 @@
                     <p>在屏幕下方固定，可以通过缩小浏览器窗口高度来查看效果。</p>
                     <p>注意，<code>offset-top</code>和<code>offset-bottom</code>只可以设置一个，如果都设置，会使用<code>offset-top</code>。</p>
                 </div>
-                <i-code lang="html" slot="code">{{ code.bottom }}</i-code>
+                <i-code :title="title" lang="html" slot="code">{{ code.bottom }}</i-code>
             </Demo>
             <Demo title="固定状态改变时的回调">
                 <div slot="demo">
@@ -60,7 +60,7 @@
                 <div slot="desc">
                     <p>当固定状态发生改变时，会触发事件。</p>
                 </div>
-                <i-code lang="html" slot="code">{{ code.change }}</i-code>
+                <i-code :title="title" lang="html" slot="code">{{ code.change }}</i-code>
             </Demo>
 
             <div class="api">

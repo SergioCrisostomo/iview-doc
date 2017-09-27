@@ -52,7 +52,7 @@
                 <div slot="desc">
                     <p><code>Value</code> corresponds to the name of the <code>TabPane</code>, it is used to identify which item is currently active. The name defaults from 0 and activates the first item by default. You can use <code>v-model</code> to enable a two-way bingding on data.</p>
                 </div>
-                <i-code lang="html" slot="code">{{ code.base }}</i-code>
+                <i-code :title="title" lang="html" slot="code">{{ code.base }}</i-code>
             </Demo>
             <Demo title="Disabled">
                 <div slot="demo">
@@ -65,7 +65,7 @@
                 <div slot="desc">
                     <p>Disabled a tab.</p>
                 </div>
-                <i-code lang="html" slot="code">{{ code.disabled }}</i-code>
+                <i-code :title="title" lang="html" slot="code">{{ code.disabled }}</i-code>
             </Demo>
             <Demo title="Icon">
                 <div slot="demo">
@@ -78,7 +78,7 @@
                 <div slot="desc">
                     <p>The Tab with Icon.</p>
                 </div>
-                <i-code lang="html" slot="code">{{ code.icon }}</i-code>
+                <i-code :title="title" lang="html" slot="code">{{ code.icon }}</i-code>
             </Demo>
             <Demo title="Mini tab">
                 <div slot="demo">
@@ -91,7 +91,7 @@
                 <div slot="desc">
                     <p>Set the property <code></code> to <code>small</code> can be displayed as a mini-type, only effective when the <code>type</code> is <code>line</code>.</p>
                 </div>
-                <i-code lang="html" slot="code">{{ code.mini }}</i-code>
+                <i-code :title="title" lang="html" slot="code">{{ code.mini }}</i-code>
             </Demo>
             <Demo title="Card type tab">
                 <div slot="demo">
@@ -104,7 +104,7 @@
                 <div slot="desc">
                     <p>Set the property <code>type</code> to <code>card</code> can display the card style, commonly used at the top of the container.</p>
                 </div>
-                <i-code lang="html" slot="code">{{ code.card }}</i-code>
+                <i-code :title="title" lang="html" slot="code">{{ code.card }}</i-code>
             </Demo>
             <Demo title="Closable">
                 <div slot="demo">
@@ -118,7 +118,7 @@
                     <p>You can close an tab by setting the property <code>closable</code>, only if the <code>type</code> is <code>card</code>.</p>
                     <p>The tab should be closed manually in conjunction with the <code>on-tab-remove</code> event.</p>
                 </div>
-                <i-code lang="html" slot="code">{{ code.closable }}</i-code>
+                <i-code :title="title" lang="html" slot="code">{{ code.closable }}</i-code>
             </Demo>
             <Demo title="Custom tab">
                 <div slot="demo">
@@ -131,7 +131,7 @@
                 <div slot="desc">
                     <p>You can customize the contents of the tab by setting label as Render function.</p>
                 </div>
-                <i-code lang="html" slot="code">{{ code.render }}</i-code>
+                <i-code :title="title" lang="html" slot="code">{{ code.render }}</i-code>
             </Demo>
             <Demo title="Extra content">
                 <div slot="demo">
@@ -143,7 +143,7 @@
                 <div slot="desc">
                     <p>You can add extra actions to the right of Tabs by adding the slot <code>extra</code>.</p>
                 </div>
-                <i-code lang="html" slot="code">{{ code.extra }}</i-code>
+                <i-code :title="title" lang="html" slot="code">{{ code.extra }}</i-code>
             </Demo>
             <Demo title="Do not use animation">
                 <div slot="demo">
@@ -156,7 +156,7 @@
                 <div slot="desc">
                     <p>Animating can be disabled by setting the property <code>animated</code> to <code>false</code>.</p>
                 </div>
-                <i-code lang="html" slot="code">{{ code.animated }}</i-code>
+                <i-code :title="title" lang="html" slot="code">{{ code.animated }}</i-code>
             </Demo>
             <Demo title="Other styles" vertical hide-code>
                 <div slot="demo">
@@ -180,7 +180,7 @@
                 <div slot="desc">
                     <p>Custom UI, needs to override styles.</p>
                 </div>
-                <i-code lang="html" slot="code">{{ code.style }}</i-code>
+                <i-code :title="title" lang="html" slot="code">{{ code.style }}</i-code>
             </Demo>
             <div class="api">
                 <Anchor title="API" h2></Anchor>

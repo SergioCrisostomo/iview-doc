@@ -17,7 +17,7 @@
                 <div slot="desc">
                     <p>The most basic step bar，The component automatically determines the status of each step based on <code>current</code>.</p>
                 </div>
-                <i-code lang="html" slot="code">{{ code.base }}</i-code>
+                <i-code :title="title" lang="html" slot="code">{{ code.base }}</i-code>
             </Demo>
             <Demo title="Mini version" vertical>
                 <div slot="demo">
@@ -31,7 +31,7 @@
                 <div slot="desc">
                     <p>Set <code>size</code> to <code>small</code> to use mini version. </p>
                 </div>
-                <i-code lang="html" slot="code">{{ code.size }}</i-code>
+                <i-code :title="title" lang="html" slot="code">{{ code.size }}</i-code>
             </Demo>
             <Demo title="With icon" vertical>
                 <div slot="demo">
@@ -44,7 +44,7 @@
                 <div slot="desc">
                     <p>You can use icons by setting the property <code>icon</code> for Step.</p>
                 </div>
-                <i-code lang="html" slot="code">{{ code.icon }}</i-code>
+                <i-code :title="title" lang="html" slot="code">{{ code.icon }}</i-code>
             </Demo>
             <Demo title="Switch Step" vertical>
                 <div slot="demo">
@@ -62,7 +62,7 @@
                 <div slot="desc">
                     <p>Cooperate with the content and buttons, to represent the progress of a process.</p>
                 </div>
-                <i-code lang="html" slot="code">{{ code.change }}</i-code>
+                <i-code :title="title" lang="html" slot="code">{{ code.change }}</i-code>
             </Demo>
             <Demo title="Vertical">
                 <div slot="demo">
@@ -76,7 +76,7 @@
                 <div slot="desc">
                     <p>A simple step bar in the vertical direction by setting attribute <code>direction</code> to <code>vertical</code>.</p>
                 </div>
-                <i-code lang="html" slot="code">{{ code.direction }}</i-code>
+                <i-code :title="title" lang="html" slot="code">{{ code.direction }}</i-code>
             </Demo>
             <Demo title="Error status" vertical>
                 <div slot="demo">
@@ -90,7 +90,7 @@
                 <div slot="desc">
                     <p>By using <code>status</code> of <code>Steps</code>, you can specify the state for current step.</p>
                 </div>
-                <i-code lang="html" slot="code">{{ code.error }}</i-code>
+                <i-code :title="title" lang="html" slot="code">{{ code.error }}</i-code>
             </Demo>
             <div class="api">
                 <Anchor title="API" h2></Anchor>

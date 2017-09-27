@@ -12,7 +12,7 @@
                 <div slot="desc">
                     <p>Change the number by inputing, clicking or tapping up / down button.</p>
                 </div>
-                <i-code lang="html" slot="code">{{ code.base }}</i-code>
+                <i-code :title="title" lang="html" slot="code">{{ code.base }}</i-code>
             </Demo>
             <Demo title="Decimal">
                 <div slot="demo">
@@ -21,7 +21,7 @@
                 <div slot="desc">
                     <p>Set <code>step</code> prop to control the step length of each change.</p>
                 </div>
-                <i-code lang="html" slot="code">{{ code.step }}</i-code>
+                <i-code :title="title" lang="html" slot="code">{{ code.step }}</i-code>
             </Demo>
             <Demo title="Size">
                 <div slot="demo">
@@ -32,7 +32,7 @@
                 <div slot="desc">
                     <p>Change the size of the input block to large or small by setting <code>size</code> prop to <code>large</code> or <code>small</code>. Default is medium size.</p>
                 </div>
-                <i-code lang="html" slot="code">{{ code.size }}</i-code>
+                <i-code :title="title" lang="html" slot="code">{{ code.size }}</i-code>
             </Demo>
             <Demo title="Disabled">
                 <div slot="demo">
@@ -42,7 +42,7 @@
                 <div slot="desc">
                     <p>Set <code>disabled</code> prop to disable InputNumber. Click the button to change disable status.</p>
                 </div>
-                <i-code lang="html" slot="code">{{ code.disabled }}</i-code>
+                <i-code :title="title" lang="html" slot="code">{{ code.disabled }}</i-code>
             </Demo>
             <div class="api">
                 <Anchor title="API" h2></Anchor>

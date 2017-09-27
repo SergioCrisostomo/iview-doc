@@ -69,7 +69,7 @@
                 <div slot="desc">
                     <p>Circle has many modifiable attributes. Check out the details at the bottom.</p>
                 </div>
-                <i-code lang="html" slot="code">{{ code.base }}</i-code>
+                <i-code :title="title" lang="html" slot="code">{{ code.base }}</i-code>
             </Demo>
             <Demo title="With Other Components">
                 <div slot="demo">
@@ -85,7 +85,7 @@
                 <div slot="desc">
                     <p>Circle can interact with other useful components, such as update the value dynamically.</p>
                 </div>
-                <i-code lang="html" slot="code">{{ code.percent }}</i-code>
+                <i-code :title="title" lang="html" slot="code">{{ code.percent }}</i-code>
             </Demo>
             <Demo title="Customize">
                 <div slot="demo">
@@ -109,7 +109,7 @@
                 <div slot="desc">
                     <p>You can customize inner content by <code>slot</code>.</p>
                 </div>
-                <i-code lang="html" slot="code">{{ code.custom }}</i-code>
+                <i-code :title="title" lang="html" slot="code">{{ code.custom }}</i-code>
             </Demo>
             <div class="api">
                 <Anchor title="API" h2></Anchor>

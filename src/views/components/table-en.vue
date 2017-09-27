@@ -41,7 +41,7 @@
                     <div slot="desc">
                         <p>The simplest usage.</p>
                     </div>
-                    <i-code lang="html" slot="code">{{ code.base }}</i-code>
+                    <i-code :title="title" lang="html" slot="code">{{ code.base }}</i-code>
                 </Demo>
                 <Demo title="Stripe" vertical hide-code>
                     <div slot="demo">
@@ -50,7 +50,7 @@
                     <div slot="desc">
                         <p>Set <code>stripe</code> prop to apply stripe style. It's used to differentiate adjacent rows.</p>
                     </div>
-                    <i-code lang="html" slot="code">{{ code.stripe }}</i-code>
+                    <i-code :title="title" lang="html" slot="code">{{ code.stripe }}</i-code>
                 </Demo>
                 <Demo title="Bordered" vertical hide-code>
                     <div slot="demo">
@@ -59,7 +59,7 @@
                     <div slot="desc">
                         <p>Add border to Table.</p>
                     </div>
-                    <i-code lang="html" slot="code">{{ code.border }}</i-code>
+                    <i-code :title="title" lang="html" slot="code">{{ code.border }}</i-code>
                 </Demo>
                 <Demo title="Custom Style" vertical hide-code>
                     <div slot="demo">
@@ -75,7 +75,7 @@
                         <p><strong>Column</strong>: Set <code>className</code> key to columns prop's object to assign a class name to a certain column.</p>
                         <p><strong>Cell</strong>: Set <code>cellClassName</code> key to data prop's object to assign a class name to a certain cell.</p>
                     </div>
-                    <i-code lang="html" slot="code">{{ code.class }}</i-code>
+                    <i-code :title="title" lang="html" slot="code">{{ code.class }}</i-code>
                 </Demo>
                 <Demo title="Fixed Header" vertical hide-code>
                     <div slot="demo">
@@ -84,7 +84,7 @@
                     <div slot="desc">
                         <p>Set <code>height</code> prop to fix the height of the header. It'll make the header fixed on the top of Table.</p>
                     </div>
-                    <i-code lang="html" slot="code">{{ code.height }}</i-code>
+                    <i-code :title="title" lang="html" slot="code">{{ code.height }}</i-code>
                 </Demo>
                 <Demo title="Fixed Column" vertical hide-code>
                     <div slot="demo">
@@ -93,7 +93,7 @@
                     <div slot="desc">
                         <p>Set <code>fixed</code> key to <code>left</code> or <code>right</code> in <code>columns</code> prop to fix the column to the left or right.</p>
                     </div>
-                    <i-code lang="html" slot="code">{{ code.fixed }}</i-code>
+                    <i-code :title="title" lang="html" slot="code">{{ code.fixed }}</i-code>
                 </Demo>
                 <Demo title="Fixed Header &amp; Column" vertical hide-code>
                     <div slot="demo">
@@ -102,7 +102,7 @@
                     <div slot="desc">
                         <p>You can fix header and certain columns simultaneously by setting both props above.</p>
                     </div>
-                    <i-code lang="html" slot="code">{{ code.fixedAll }}</i-code>
+                    <i-code :title="title" lang="html" slot="code">{{ code.fixedAll }}</i-code>
                 </Demo>
                 <Demo title="Single Choice" vertical hide-code>
                     <div slot="demo">
@@ -116,7 +116,7 @@
                         <p>Set <code>_highlight: true</code> key to data can make the item selected by default.</p>
                         <p>Call the <code>clearCurrentRow</code> method to clear the highlighted item.</p>
                     </div>
-                    <i-code lang="html" slot="code">{{ code.highlight }}</i-code>
+                    <i-code :title="title" lang="html" slot="code">{{ code.highlight }}</i-code>
                 </Demo>
                 <Demo title="Multiple Choices" vertical hide-code>
                     <div slot="demo">
@@ -136,7 +136,7 @@
                             <li><code>@on-selection-change</code>: Emitted when select state is changed. Return value: <code>selection</code> (selected items array) </li>
                         </ul>
                     </div>
-                    <i-code lang="html" slot="code">{{ code.selection }}</i-code>
+                    <i-code :title="title" lang="html" slot="code">{{ code.selection }}</i-code>
                 </Demo>
                 <Demo title="Sort" vertical hide-code>
                     <div slot="demo">
@@ -149,7 +149,7 @@
                         <p>If remote sorting is needed, you can set <code>sortable： 'custom'</code>, and do the remote sorting after <code>@on-sort-change</code> is emitted. After sorting, you have to set the new data manually. Details on API Doc.</p>
                         <p>Attention: Sorting won't affect source data.</p>
                     </div>
-                    <i-code lang="html" slot="code">{{ code.sort }}</i-code>
+                    <i-code :title="title" lang="html" slot="code">{{ code.sort }}</i-code>
                 </Demo>
                 <Demo title="Filter" vertical hide-code>
                     <div slot="demo">
@@ -161,7 +161,7 @@
                         <p>If <code>filterMultiple: false</code> is set, single choice is used. Default is multiple choices.</p>
                         <p>Attention: filter won't affect source data.</p>
                     </div>
-                    <i-code lang="html" slot="code">{{ code.filter }}</i-code>
+                    <i-code :title="title" lang="html" slot="code">{{ code.filter }}</i-code>
                 </Demo>
                 <Demo title="Custom Column Template" vertical hide-code>
                     <div slot="demo">
@@ -176,7 +176,7 @@
                             The essence of <code>render</code> function is to return a string. Table compiles the string inside it. If you've used custom components inside render, you should pay more attention on the context. The rendered component's default context is same to <code>Table</code>'s context. If you want to compile the component in selected instance, you can set <code>context</code> prop to Table to set the context. In this example, we set current route page as the context. 一般情况不需要此配置，但如果你把 <code>Table</code> 作为一个 slot 封装在其它组件里，这时 <code>context</code> 属性就很有用，比如父级是 $parent，根组件 $root。
                         </blockquote>
                     </div>
-                    <i-code lang="html" slot="code">{{ code.render }}</i-code>
+                    <i-code :title="title" lang="html" slot="code">{{ code.render }}</i-code>
                 </Demo>
                 <Demo title="Expandable" vertical hide-code>
                     <div slot="demo">
@@ -188,7 +188,7 @@
                         <p>Set <code>_expanded</code> to true for certain data item can let the row be expanded by default. Set <code>_disableExpand</code> to disable expanding on the row.</p>                        
                         <p>Simular to custom column template, we use render function to render expand area. If the content is complex, you can split it into components or use JSX.</p>
                     </div>
-                    <i-code lang="html" slot="code">{{ code.expand }}</i-code>
+                    <i-code :title="title" lang="html" slot="code">{{ code.expand }}</i-code>
                 </Demo>
                 <Demo title="Loading" vertical hide-code>
                     <div slot="demo">
@@ -199,7 +199,7 @@
                     <div slot="desc">
                         <p>Set property <code>loading</code> can make the table in the load state, and it is recommended for asynchronous request data, paging.</p>
                     </div>
-                    <i-code lang="html" slot="code">{{ code.loading }}</i-code>
+                    <i-code :title="title" lang="html" slot="code">{{ code.loading }}</i-code>
                 </Demo>
                 <Demo title="Size" vertical hide-code>
                     <div slot="demo">
@@ -210,7 +210,7 @@
                     <div slot="desc">
                         <p>Set <code>size</code> prop to <code>large</code> or <code>small</code> or <code>default</code> to adjust the size of the table to large or small or default size. Default is medium.</p>
                     </div>
-                    <i-code lang="html" slot="code">{{ code.size }}</i-code>
+                    <i-code :title="title" lang="html" slot="code">{{ code.size }}</i-code>
                 </Demo>
                 <Demo title="Export csv" vertical hide-code>
                     <div slot="demo">
@@ -229,7 +229,7 @@
                             <li>Temporarily, IE9 only supports English data. Chinese will be messy code.</li>
                         </ul>
                     </div>
-                    <i-code lang="html" slot="code">{{ code.csv }}</i-code>
+                    <i-code :title="title" lang="html" slot="code">{{ code.csv }}</i-code>
                 </Demo>
                 <Anchor title="Advanced Examples" h2></Anchor>
                 <p>Examples above basically cover all the functions of Table. We provides some complex examples on the basis of real business scenarios:</p>
@@ -664,7 +664,7 @@
                         <Page :total="100" :current="1" @on-change="changePage"></Page>
                     </div>
                 </div>
-                <i-code lang="html" bg>{{ code.table1 }}</i-code>
+                <i-code :title="title" lang="html" bg>{{ code.table1 }}</i-code>
             </div>
         </Modal>
         <Modal v-model="table2" title="Table with Multi-cols Filter" width="1000" :styles="{top: '20px'}">
@@ -690,7 +690,7 @@
                 </Checkbox-group>
                 <Table :data="tableData2" :columns="tableColumns2" border></Table>
                 <br>
-                <i-code lang="html" bg>{{ code.table2 }}</i-code>
+                <i-code :title="title" lang="html" bg>{{ code.table2 }}</i-code>
             </div>
         </Modal>
         <Modal v-model="table3" title="Table with Many Styles" width="1000" :styles="{top: '20px'}">
@@ -718,7 +718,7 @@
                 </div>
                 <Table :border="showBorder" :stripe="showStripe" :show-header="showHeader" :height="fixedHeader ? 250 : ''" :size="tableSize" :data="tableData3" :columns="tableColumns3"></Table>
                 <br>
-                <i-code lang="html" bg>{{ code.table3 }}</i-code>
+                <i-code :title="title" lang="html" bg>{{ code.table3 }}</i-code>
             </div>
         </Modal>
     </div>

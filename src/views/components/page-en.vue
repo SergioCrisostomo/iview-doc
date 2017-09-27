@@ -12,7 +12,7 @@
                 <div slot="desc">
                     <p>Basic paging operation. It will be folded when there are too many pages.</p>
                 </div>
-                <i-code lang="html" slot="code">{{ code.base }}</i-code>
+                <i-code :title="title" lang="html" slot="code">{{ code.base }}</i-code>
             </Demo>
             <Demo title="Pieces in Each Page">
                 <div slot="demo">
@@ -21,7 +21,7 @@
                 <div slot="desc">
                     <p>You can set pieces amount shown in each page.</p>
                 </div>
-                <i-code lang="html" slot="code">{{ code.sizer }}</i-code>
+                <i-code :title="title" lang="html" slot="code">{{ code.sizer }}</i-code>
             </Demo>
             <Demo title="Elevator">
                 <div slot="demo">
@@ -30,7 +30,7 @@
                 <div slot="desc">
                     <p>Directly jump to certain page.</p>
                 </div>
-                <i-code lang="html" slot="code">{{ code.elevator }}</i-code>
+                <i-code :title="title" lang="html" slot="code">{{ code.elevator }}</i-code>
             </Demo>
             <Demo title="Amount">
                 <div slot="demo">
@@ -39,7 +39,7 @@
                 <div slot="desc">
                     <p>Describe how many pieces of data are shown. It accepts slot to customize content. Default: <code v-pre>Total {{ total }} items</code></p>
                 </div>
-                <i-code lang="html" slot="code">{{ code.total }}</i-code>
+                <i-code :title="title" lang="html" slot="code">{{ code.total }}</i-code>
             </Demo>
             <Demo title="Mini Size">
                 <div slot="demo">
@@ -52,7 +52,7 @@
                 <div slot="desc">
                     <p>Set <code>size</code> to <code>small</code> to use mini size. The functions of mini size are same to the normal size.</p>
                 </div>
-                <i-code lang="html" slot="code">{{ code.mini }}</i-code>
+                <i-code :title="title" lang="html" slot="code">{{ code.mini }}</i-code>
             </Demo>
             <Demo title="Conciseness">
                 <div slot="demo">
@@ -61,7 +61,7 @@
                 <div slot="desc">
                     <p>Set <code>simple</code> prop to use a more concise Page component. It changes page by entering page number then tapping Enter, or by clicking certain page number, or by tapping Up and Down keys. concise Page CANNOT use amount, elevator and you can't let user change piece amount shown in each page.</p>
                 </div>
-                <i-code lang="html" slot="code">{{ code.simple }}</i-code>
+                <i-code :title="title" lang="html" slot="code">{{ code.simple }}</i-code>
             </Demo>
             <div class="api">
                 <Anchor title="API" h2></Anchor>

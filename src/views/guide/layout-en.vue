@@ -132,7 +132,7 @@
                 <div slot="desc">
                     <p>Layout with top navigation, breadcrumb and content.</p>
                 </div>
-                <i-code lang="html" slot="code">{{ code.top }}</i-code>
+                <i-code :title="title" lang="html" slot="code">{{ code.top }}</i-code>
             </Demo>
             <Demo title="Top Navigation + Side Navigation" vertical hide-code>
                 <div slot="demo">
@@ -209,7 +209,7 @@
                 <div slot="desc">
                     <p>Layout with top navigation and side navigation.</p>
                 </div>
-                <i-code lang="html" slot="code">{{ code.left }}</i-code>
+                <i-code :title="title" lang="html" slot="code">{{ code.left }}</i-code>
             </Demo>
             <Demo title="Side Navigation" vertical hide-code>
                 <div slot="demo">
@@ -267,7 +267,7 @@
                 <div slot="desc">
                     <p>Layout with side navigation.</p>
                 </div>
-                <i-code lang="html" slot="code">{{ code.side }}</i-code>
+                <i-code :title="title" lang="html" slot="code">{{ code.side }}</i-code>
             </Demo>
             <Demo title="Topbar" vertical hide-code>
                 <div slot="demo">
@@ -292,7 +292,7 @@
                 <div slot="desc">
                     <p>Navbar on the top.</p>
                 </div>
-                <i-code lang="html" slot="code">{{ code.ceiling }}</i-code>
+                <i-code :title="title" lang="html" slot="code">{{ code.ceiling }}</i-code>
             </Demo>
             <Demo title="Collapsed Side Navigation" vertical hide-code>
                 <div slot="demo">
@@ -341,7 +341,7 @@
                 <div slot="desc">
                     <p>Navbar on the left side can collapse.</p>
                 </div>
-                <i-code lang="html" slot="code">{{ code.fold }}</i-code>
+                <i-code :title="title" lang="html" slot="code">{{ code.fold }}</i-code>
             </Demo>
         </article>
     </i-article>

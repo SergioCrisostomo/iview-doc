@@ -54,7 +54,7 @@
                 <div slot="desc">
                     <p>Customized title, extra operation and main content. User can customize all parts of the component, and combined with other components. It's relatively flexible.</p>
                 </div>
-                <i-code lang="html" slot="code">{{ code.base }}</i-code>
+                <i-code :title="title" lang="html" slot="code">{{ code.base }}</i-code>
             </Demo>
             <Demo title="No Border">
                 <div slot="demo">
@@ -68,7 +68,7 @@
                 <div slot="desc">
                     <p>Disable the border by setting <code>bordered</code> prop to false. We recommend you to use it when background color is gray.</p>
                 </div>
-                <i-code lang="html" slot="code">{{ code.bordered }}</i-code>
+                <i-code :title="title" lang="html" slot="code">{{ code.bordered }}</i-code>
             </Demo>
             <Demo title="Disable Hover Shadow">
                 <div slot="demo">
@@ -94,7 +94,7 @@
                 <div slot="desc">
                     <p>Disable mouse hover shadow by setting <code>dis-hover</code> prop. </p>
                 </div>
-                <i-code lang="html" slot="code">{{ code.disHover }}</i-code>
+                <i-code :title="title" lang="html" slot="code">{{ code.disHover }}</i-code>
             </Demo>
             <Demo title="Card Shadow">
                 <div slot="demo">
@@ -121,7 +121,7 @@
                     <p>Set <code>shadow</code> prop to display card shadow. If the prop is set, <code>bordered</code> prop and <code
                     >dis-hover</code> prop will be invalid. We recommend you to use it when background color is gray.</p>
                 </div>
-                <i-code lang="html" slot="code">{{ code.shadow }}</i-code>
+                <i-code :title="title" lang="html" slot="code">{{ code.shadow }}</i-code>
             </Demo>
             <Demo title="Succinct Card">
                 <div slot="demo">
@@ -135,7 +135,7 @@
                 <div slot="desc">
                     <p>Only contains content, no title.</p>
                 </div>
-                <i-code lang="html" slot="code">{{ code.simple }}</i-code>
+                <i-code :title="title" lang="html" slot="code">{{ code.simple }}</i-code>
             </Demo>
             <div class="api">
                 <Anchor title="API" h2></Anchor>

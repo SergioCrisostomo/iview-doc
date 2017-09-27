@@ -11,7 +11,7 @@
                 <li>Customized theme.</li>
             </ul>
             <Anchor title="Example" h2></Anchor>
-            <i-code lang="html" bg>{{ code.introduce.demo }}</i-code>
+            <i-code :title="title" lang="html" bg>{{ code.introduce.demo }}</i-code>
             <p>Result</p>
             <Slider v-model="value" range></Slider>
             <Anchor title="Version" h2></Anchor>

@@ -69,7 +69,7 @@
                 <div slot="desc">
                     <p>圆形进度环有一系列的参数可配置，具体可以查看下面的API文档。</p>
                 </div>
-                <i-code lang="html" slot="code">{{ code.base }}</i-code>
+                <i-code :title="title" lang="html" slot="code">{{ code.base }}</i-code>
             </Demo>
             <Demo title="配合外部组件使用">
                 <div slot="demo">
@@ -85,7 +85,7 @@
                 <div slot="desc">
                     <p>通过数据的联动和逻辑控制，实现交互效果。</p>
                 </div>
-                <i-code lang="html" slot="code">{{ code.percent }}</i-code>
+                <i-code :title="title" lang="html" slot="code">{{ code.percent }}</i-code>
             </Demo>
             <Demo title="自定义更多样式">
                 <div slot="demo">
@@ -109,7 +109,7 @@
                 <div slot="desc">
                     <p>通过自定义<code>slot</code>和丰富的配置，可以组合出很多统计效果。</p>
                 </div>
-                <i-code lang="html" slot="code">{{ code.custom }}</i-code>
+                <i-code :title="title" lang="html" slot="code">{{ code.custom }}</i-code>
             </Demo>
             <div class="api">
                 <Anchor title="API" h2></Anchor>

@@ -4,12 +4,12 @@
             <h1>Internationalization</h1>
             <p>The default language is Chinese. To use other languages, you need to do some customization.</p>
             <p>Take English as an example. If you did fully importing and wish to use English, you can modify <strong>main.js</strong> as the following:</p>
-            <i-code lang="js" bg>{{ code.i18n.demo }}</i-code>
+            <i-code :title="title" lang="js" bg>{{ code.i18n.demo }}</i-code>
             <Anchor title="Compatible with vue-i18n" h2></Anchor>
             <p>iView is compatible with <a href="https://github.com/kazupon/vue-i18n" target="_blank">vue-i18n</a>, which makes it eaiser to switch between multiple languages.</p>
-            <i-code lang="js" bg>{{ code.i18n.vue }}</i-code>
+            <i-code :title="title" lang="js" bg>{{ code.i18n.vue }}</i-code>
             <p>We need the help of Babel to import iView language packages:</p>
-            <i-code lang="js" bg>{{ code.install.warning }}</i-code>
+            <i-code :title="title" lang="js" bg>{{ code.install.warning }}</i-code>
             <Anchor title="Supported Languages" h2></Anchor>
             <p>iView have beed translated from Chinese to the following languages:</p>
             <ul>

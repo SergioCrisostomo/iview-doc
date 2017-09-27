@@ -26,7 +26,7 @@
                 <div slot="desc">
                     <p>Simple Use: Fixed at the top when element is invisible.</p>
                 </div>
-                <i-code lang="html" slot="code">{{ code.base }}</i-code>
+                <i-code :title="title" lang="html" slot="code">{{ code.base }}</i-code>
             </Demo>
             <Demo title="Offset">
                 <div slot="demo">
@@ -37,7 +37,7 @@
                 <div slot="desc">
                     <p>Fixed after rolling a certain distance.</p>
                 </div>
-                <i-code lang="html" slot="code">{{ code.top }}</i-code>
+                <i-code :title="title" lang="html" slot="code">{{ code.top }}</i-code>
             </Demo>
             <Demo title="Fixed at the bottom">
                 <div slot="demo">
@@ -49,7 +49,7 @@
                     <p>Fixed at the under screen area. Reduce the height of the browser window to see the effect.</p>
                     <p>Attention，Only one of <code>offset-top</code> and <code>offset-bottom</code> can be set，If you set both，<code>offset-top</code> will be used.</p>
                 </div>
-                <i-code lang="html" slot="code">{{ code.bottom }}</i-code>
+                <i-code :title="title" lang="html" slot="code">{{ code.bottom }}</i-code>
             </Demo>
             <Demo title="Callback when affix state is changed">
                 <div slot="demo">
@@ -60,7 +60,7 @@
                 <div slot="desc">
                     <p>When affix state is changed，a event will be emitted.</p>
                 </div>
-                <i-code lang="html" slot="code">{{ code.change }}</i-code>
+                <i-code :title="title" lang="html" slot="code">{{ code.change }}</i-code>
             </Demo>
 
             <div class="api">

@@ -12,7 +12,7 @@
                 <div slot="desc">
                     <p>基本用法。</p>
                 </div>
-                <i-code lang="html" slot="code">{{ code.base }}</i-code>
+                <i-code :title="title" lang="html" slot="code">{{ code.base }}</i-code>
             </Demo>
             <Demo title="半星">
                 <div slot="demo">
@@ -21,7 +21,7 @@
                 <div slot="desc">
                     <p>设置属性 <code>allow-half</code> 可以选中半星。</p>
                 </div>
-                <i-code lang="html" slot="code">{{ code.half }}</i-code>
+                <i-code :title="title" lang="html" slot="code">{{ code.half }}</i-code>
             </Demo>
             <Demo title="显示提示">
                 <div slot="demo">
@@ -40,7 +40,7 @@
                     <p>设置属性 <code>show-text</code> 可以显示提示文字。</p>
                     <p>提示内容也可以通过 slot 自定义。</p>
                 </div>
-                <i-code lang="html" slot="code">{{ code.text }}</i-code>
+                <i-code :title="title" lang="html" slot="code">{{ code.text }}</i-code>
             </Demo>
             <Demo title="只读">
                 <div slot="demo">
@@ -49,7 +49,7 @@
                 <div slot="desc">
                     <p>设置属性 <code>disabled</code> 开启只读模式，无法交互。</p>
                 </div>
-                <i-code lang="html" slot="code">{{ code.disabled }}</i-code>
+                <i-code :title="title" lang="html" slot="code">{{ code.disabled }}</i-code>
             </Demo>
             <div class="api">
                 <Anchor title="API" h2></Anchor>

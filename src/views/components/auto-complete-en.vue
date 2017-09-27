@@ -45,7 +45,7 @@
                 <div slot="desc">
                     <p>Basic Usage, set datasource of AutoComplete with <code>data</code> property.</p>
                 </div>
-                <i-code lang="html" slot="code">{{ code.base }}</i-code>
+                <i-code :title="title" lang="html" slot="code">{{ code.base }}</i-code>
             </Demo>
             <Demo title="Customized">
                 <div slot="demo">
@@ -60,7 +60,7 @@
                 <div slot="desc">
                     <p>You could pass <code>Option</code> as slot of <code>AutoComplete</code>, instead of using data. This allows you to customize the display</p>
                 </div>
-                <i-code lang="html" slot="code">{{ code.slot }}</i-code>
+                <i-code :title="title" lang="html" slot="code">{{ code.slot }}</i-code>
             </Demo>
             <Demo title="Non-case-sensitive AutoComplete">
                 <div slot="demo">
@@ -75,7 +75,7 @@
                 <div slot="desc">
                     <p>A non-case-sensitive AutoComplete and how to use filter method.</p>
                 </div>
-                <i-code lang="html" slot="code">{{ code.filter }}</i-code>
+                <i-code :title="title" lang="html" slot="code">{{ code.filter }}</i-code>
             </Demo>
             <Demo title="Lookup-Patterns">
                 <div slot="demo">
@@ -100,7 +100,7 @@
                 <div slot="desc">
                     <p>Fully customizable Option to display a complex layout.</p>
                 </div>
-                <i-code lang="html" slot="code">{{ code.search }}</i-code>
+                <i-code :title="title" lang="html" slot="code">{{ code.search }}</i-code>
             </Demo>
         </article>
         <div class="api">

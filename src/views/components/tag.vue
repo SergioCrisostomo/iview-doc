@@ -15,7 +15,7 @@
                     <p>简单的展示，添加属性<code>closable</code>可以关闭标签。</p>
                     <p>点击关闭标签时，会触发 on-close 事件，需自己实现关闭逻辑。</p>
                 </div>
-                <i-code lang="html" slot="code">{{ code.base }}</i-code>
+                <i-code :title="title" lang="html" slot="code">{{ code.base }}</i-code>
             </Demo>
             <Demo title="样式类型">
                 <div slot="demo">
@@ -27,7 +27,7 @@
                 <div slot="desc">
                     <p>通过设置 <code>type</code> 属性为 <code>border</code> 或 <code>dot</code> 来选择不同的样式类型。建议有关闭的某些场景下使用 border，图例的场景下使用 dot。</p>
                 </div>
-                <i-code lang="html" slot="code">{{ code.type }}</i-code>
+                <i-code :title="title" lang="html" slot="code">{{ code.type }}</i-code>
             </Demo>
             <Demo title="各种颜色">
                 <div slot="demo">
@@ -49,7 +49,7 @@
                 <div slot="desc">
                     <p>四种不同的颜色。</p>
                 </div>
-                <i-code lang="html" slot="code">{{ code.color }}</i-code>
+                <i-code :title="title" lang="html" slot="code">{{ code.color }}</i-code>
             </Demo>
             <Demo title="动态添加和删除">
                 <div slot="demo">
@@ -59,7 +59,7 @@
                 <div slot="desc">
                     <p>用数组生成一组标签，可以动态添加和删除。</p>
                 </div>
-                <i-code lang="html" slot="code">{{ code.add }}</i-code>
+                <i-code :title="title" lang="html" slot="code">{{ code.add }}</i-code>
             </Demo>
             <div class="api">
                 <Anchor title="API" h2></Anchor>

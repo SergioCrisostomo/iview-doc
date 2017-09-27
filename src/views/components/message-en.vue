@@ -12,7 +12,7 @@
                 <div slot="desc">
                     <p>Basic promt, fades after 1.5 seconds by default.</p>
                 </div>
-                <i-code lang="html" slot="code">{{ code.info }}</i-code>
+                <i-code :title="title" lang="html" slot="code">{{ code.info }}</i-code>
             </Demo>
             <Demo title="Prompt Type">
                 <div slot="demo">
@@ -23,7 +23,7 @@
                 <div slot="desc">
                     <p>Different prompt types: success, warning, error.</p>
                 </div>
-                <i-code lang="html" slot="code">{{ code.type }}</i-code>
+                <i-code :title="title" lang="html" slot="code">{{ code.type }}</i-code>
             </Demo>
             <Demo title="Loading Prompt">
                 <div slot="demo">
@@ -32,7 +32,7 @@
                 <div slot="desc">
                     <p>Loading status, dismissed asynchronously.</p>
                 </div>
-                <i-code lang="html" slot="code">{{ code.loading }}</i-code>
+                <i-code :title="title" lang="html" slot="code">{{ code.loading }}</i-code>
             </Demo>
             <Demo title="Custom Prompt Duration">
                 <div slot="demo">
@@ -41,7 +41,7 @@
                 <div slot="desc">
                     <p>Customize prompt duration. Can also be configured in <code>Message.config()</code>, refer to API section below.</p>
                 </div>
-                <i-code lang="html" slot="code">{{ code.time }}</i-code>
+                <i-code :title="title" lang="html" slot="code">{{ code.time }}</i-code>
             </Demo>
             <Demo title="Closable">
                 <div slot="demo">
@@ -50,7 +50,7 @@
                 <div slot="desc">
                     <p>Set parameter as an object, and set its <code>closable</code> to true to allow manual close. Details on API Doc.</p>
                 </div>
-                <i-code lang="html" slot="code">{{ code.closable }}</i-code>
+                <i-code :title="title" lang="html" slot="code">{{ code.closable }}</i-code>
             </Demo>
             <div class="api">
                 <Anchor title="API" h2></Anchor>
@@ -120,7 +120,7 @@
                     </li>
                 </ul>
                 <br>
-                <i-code bg>{{ code.config }}</i-code>
+                <i-code :title="title" bg>{{ code.config }}</i-code>
                 <br>
                 <table>
                     <thead>

@@ -28,7 +28,7 @@
                 <div slot="desc">
                     <p>最简单的使用方法。</p>
                 </div>
-                <i-code lang="html" slot="code">{{ code.base }}</i-code>
+                <i-code :title="title" lang="html" slot="code">{{ code.base }}</i-code>
             </Demo>
             <Demo title="小红点">
                 <div slot="demo">
@@ -53,7 +53,7 @@
                 <div slot="desc">
                     <p>强迫症患者慎用！</p>
                 </div>
-                <i-code lang="html" slot="code">{{ code.dot }}</i-code>
+                <i-code :title="title" lang="html" slot="code">{{ code.dot }}</i-code>
             </Demo>
             <Demo title="封顶数字">
                 <div slot="demo">
@@ -73,7 +73,7 @@
                 <div slot="desc">
                     <p>通过设置<code>overflow-count</code>属性设置一个封顶值，当超过时，会显示<code>${overflowCount}+</code></p>
                 </div>
-                <i-code lang="html" slot="code">{{ code.overflow }}</i-code>
+                <i-code :title="title" lang="html" slot="code">{{ code.overflow }}</i-code>
             </Demo>
             <Demo title="独立使用及自定义样式">
                 <div slot="demo">
@@ -83,7 +83,7 @@
                 <div slot="desc">
                     <p>可以没有 slot 独立展示。</p>
                 </div>
-                <i-code lang="html" slot="code">{{ code.alone }}</i-code>
+                <i-code :title="title" lang="html" slot="code">{{ code.alone }}</i-code>
             </Demo>
             <div class="api">
                 <Anchor title="API" h2></Anchor>

@@ -35,7 +35,7 @@
                 <div slot="desc">
                     <p>The simplest usage.</p>
                 </div>
-                <i-code lang="html" slot="code">{{ code.base }}</i-code>
+                <i-code :title="title" lang="html" slot="code">{{ code.base }}</i-code>
             </Demo>
             <Demo title="Auto Play">
                 <div slot="demo">
@@ -57,7 +57,7 @@
                 <div slot="desc">
                     <p>Enable auto play by setting <code>autoplay</code> prop. You can also set <code>autoplay-speed</code> to change the play speed.</p>
                 </div>
-                <i-code lang="html" slot="code">{{ code.autoplay }}</i-code>
+                <i-code :title="title" lang="html" slot="code">{{ code.autoplay }}</i-code>
             </Demo>
             <Demo title="Integrated Properties">
                 <div slot="demo">
@@ -116,7 +116,7 @@
                 <div slot="desc">
                     <p>Adjust properties dynamically.</p>
                 </div>
-                <i-code lang="html" slot="code">{{ code.setting }}</i-code>
+                <i-code :title="title" lang="html" slot="code">{{ code.setting }}</i-code>
             </Demo>
             <div class="api">
                 <Anchor title="API" h2></Anchor>

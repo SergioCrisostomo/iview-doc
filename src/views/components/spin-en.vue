@@ -53,7 +53,7 @@
                 <div slot="desc">
                     <p>A simple loading status.</p>
                 </div>
-                <i-code lang="html" slot="code">{{ code.base }}</i-code>
+                <i-code :title="title" lang="html" slot="code">{{ code.base }}</i-code>
             </Demo>
             <Demo title="Size">
                 <div slot="demo">
@@ -72,7 +72,7 @@
                 <div slot="desc">
                     <p>Set the <code>size</code> to <code>large</code> or <code>small</code> to use large/small size of spin, by default the spin's size is medium.</p>
                 </div>
-                <i-code lang="html" slot="code">{{ code.size }}</i-code>
+                <i-code :title="title" lang="html" slot="code">{{ code.size }}</i-code>
             </Demo>
             <Demo title="Centered fixed">
                 <div slot="demo">
@@ -83,7 +83,7 @@
                 <div slot="desc">
                     <p>Vertical center fixed inside the container, you need to set a <code>relative</code> or <code>absolute</code> style in parent.</p>
                 </div>
-                <i-code lang="html" slot="code">{{ code.fix }}</i-code>
+                <i-code :title="title" lang="html" slot="code">{{ code.fix }}</i-code>
             </Demo>
             <Demo title="Customized description">
                 <div slot="demo">
@@ -111,7 +111,7 @@
                 <div slot="desc">
                     <p>Customized description content. You can set it as a simple text, or a very complicated animation.</p>
                 </div>
-                <i-code lang="html" slot="code">{{ code.custom }}</i-code>
+                <i-code :title="title" lang="html" slot="code">{{ code.custom }}</i-code>
             </Demo>
             <Demo title="State switch">
                 <div slot="demo">
@@ -132,7 +132,7 @@
                 <div slot="desc">
                     <p>Controls the display and disappearance of the spin.</p>
                 </div>
-                <i-code lang="html" slot="code">{{ code.status }}</i-code>
+                <i-code :title="title" lang="html" slot="code">{{ code.status }}</i-code>
             </Demo>
             <Demo title="Full screen loading">
                 <div slot="demo">
@@ -143,7 +143,7 @@
                     <p>Use the <code>$Spin</code> method to load globally.</p>
                     <p>You can use the Render function to customize the display content.</p>
                 </div>
-                <i-code lang="html" slot="code">{{ code.$spin }}</i-code>
+                <i-code :title="title" lang="html" slot="code">{{ code.$spin }}</i-code>
             </Demo>
             <div class="api">
                 <Anchor title="API" h2></Anchor>

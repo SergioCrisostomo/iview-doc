@@ -20,7 +20,7 @@
                 <img class="demo-font-img" src="../../images/font-en.png">
             </ul>
             <Anchor title="字体代码" h3></Anchor>
-            <i-code lang="css" bg>font-family: "Helvetica Neue",Helvetica,"PingFang SC","Hiragino Sans GB","Microsoft YaHei","微软雅黑",Arial,sans-serif;</i-code>
+            <i-code :title="title" lang="css" bg>font-family: "Helvetica Neue",Helvetica,"PingFang SC","Hiragino Sans GB","Microsoft YaHei","微软雅黑",Arial,sans-serif;</i-code>
             <Anchor title="字体使用规范" h3></Anchor>
             <Row class="api" :gutter="16">
                 <i-col span="12">

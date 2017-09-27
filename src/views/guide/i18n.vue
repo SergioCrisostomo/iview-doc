@@ -3,12 +3,12 @@
         <article>
             <h1>国际化</h1>
             <p>iView 的所有组件文案默认使用的是中文，通过设置可以使用其它语言，以英文为例，在 <strong>main.js</strong> 中：</p>
-            <i-code lang="js" bg>{{ code.i18n.demo }}</i-code>
+            <i-code :title="title" lang="js" bg>{{ code.i18n.demo }}</i-code>
             <Anchor title="兼容 vue-i18n" h2></Anchor>
             <p>iView 兼容 <a href="https://github.com/kazupon/vue-i18n" target="_blank">vue-i18n</a>，搭配使用能更方便地实现多语言切换。</p>
-            <i-code lang="js" bg>{{ code.i18n.vue }}</i-code>
+            <i-code :title="title" lang="js" bg>{{ code.i18n.vue }}</i-code>
             <p>在导入 iView 的语言包前，需 babel 支持：</p>
-            <i-code lang="js" bg>{{ code.install.warning }}</i-code>
+            <i-code :title="title" lang="js" bg>{{ code.install.warning }}</i-code>
             <Anchor title="支持的语言" h2></Anchor>
             <p>iView 目前已支持以下语言：</p>
             <ul>

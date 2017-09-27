@@ -22,7 +22,7 @@
                 <div slot="desc">
                     <p>最基础的用法，通过设置<code>href</code>属性添加链接。</p>
                 </div>
-                <i-code lang="html" slot="code">{{ code.base }}</i-code>
+                <i-code :title="title" lang="html" slot="code">{{ code.base }}</i-code>
             </Demo>
             <Demo title="带图标的">
                 <div slot="demo">
@@ -41,7 +41,7 @@
                 <div slot="desc">
                     <p>可自定义每项的内容，比如带有一个图标。</p>
                 </div>
-                <i-code lang="html" slot="code">{{ code.icon }}</i-code>
+                <i-code :title="title" lang="html" slot="code">{{ code.icon }}</i-code>
             </Demo>
             <Demo title="分隔符">
                 <div slot="demo">
@@ -59,7 +59,7 @@
                 <div slot="desc">
                     <p>通过设置<code>separator</code>属性来自定义分隔符，比如<code> > </code>，也可以接受自定义的HTML字符串。</p>
                 </div>
-                <i-code lang="html" slot="code">{{ code.separator }}</i-code>
+                <i-code :title="title" lang="html" slot="code">{{ code.separator }}</i-code>
             </Demo>
             <div class="api">
                 <Anchor title="API" h2></Anchor>

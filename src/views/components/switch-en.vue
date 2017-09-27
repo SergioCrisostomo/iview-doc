@@ -17,7 +17,7 @@
                 <div slot="desc">
                     <p>The most basic usage.</p>
                 </div>
-                <i-code lang="html" slot="code">{{ code.base }}</i-code>
+                <i-code :title="title" lang="html" slot="code">{{ code.base }}</i-code>
             </Demo>
             <Demo title="Size">
                 <div slot="demo">
@@ -28,7 +28,7 @@
                 <div slot="desc">
                     <p>Set the size to <code>large</code> or <code>small</code> to use large/small size of switch, by default the switch's size is medium.</p>
                 </div>
-                <i-code lang="html" slot="code">{{ code.size }}</i-code>
+                <i-code :title="title" lang="html" slot="code">{{ code.size }}</i-code>
             </Demo>
             <Demo title="Text & icon">
                 <div slot="demo">
@@ -54,7 +54,7 @@
                     <p>With text and icon.</p>
                     <p>Customize content, it is recommended that if you use 2 characters, set the switch size to large.</p>
                 </div>
-                <i-code lang="html" slot="code">{{ code.custom }}</i-code>
+                <i-code :title="title" lang="html" slot="code">{{ code.custom }}</i-code>
             </Demo>
             <Demo title="Disabled">
                 <div slot="demo">
@@ -64,7 +64,7 @@
                 <div slot="desc">
                     <p>Disabled state of Switch.</p>
                 </div>
-                <i-code lang="html" slot="code">{{ code.disabled }}</i-code>
+                <i-code :title="title" lang="html" slot="code">{{ code.disabled }}</i-code>
             </Demo>
             <div class="api">
                 <Anchor title="API" h2></Anchor>

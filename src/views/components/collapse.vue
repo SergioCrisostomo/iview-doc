@@ -25,7 +25,7 @@
                 <div slot="desc">
                     <p>默认可以同时展开多个面板，可以设置默认展开第几个。</p>
                 </div>
-                <i-code lang="html" slot="code">{{ code.base }}</i-code>
+                <i-code :title="title" lang="html" slot="code">{{ code.base }}</i-code>
             </Demo>
             <Demo title="手风琴">
                 <div slot="demo">
@@ -47,7 +47,7 @@
                 <div slot="desc">
                     <p>通过设置属性<code>accordion</code>开启手风琴模式，每次只能打开一个面板。</p>
                 </div>
-                <i-code lang="html" slot="code">{{ code.accordion }}</i-code>
+                <i-code :title="title" lang="html" slot="code">{{ code.accordion }}</i-code>
             </Demo>
             <Demo title="面板嵌套">
                 <div slot="demo">
@@ -81,7 +81,7 @@
                 <div slot="desc">
                     <p>折叠面板可以进行嵌套。</p>
                 </div>
-                <i-code lang="html" slot="code">{{ code.nest }}</i-code>
+                <i-code :title="title" lang="html" slot="code">{{ code.nest }}</i-code>
             </Demo>
             <div class="api">
                 <Anchor title="API" h2></Anchor>

@@ -100,7 +100,7 @@
                     <p>Horizontal arrangement of the layout.</p>
                     <p><code>col</code> must be placed inside <code>row</code>. </p>
                 </div>
-                <i-code lang="html" slot="code">{{ code.base }}</i-code>
+                <i-code :title="title" lang="html" slot="code">{{ code.base }}</i-code>
             </Demo>
 
             <Demo title="Grid Gutter">
@@ -123,7 +123,7 @@
                 <div slot="desc">
                     <p>Adding <code>gutter</code> property to a <code>row</code> will add spacing to subordinate <code>col</code>s. A gutter of <code>(16+8n)px</code> is recommended for grid spacing.</p>
                 </div>
-                <i-code lang="html" slot="code">{{ code.gutter }}</i-code>
+                <i-code :title="title" lang="html" slot="code">{{ code.gutter }}</i-code>
             </Demo>
 
             <Demo title="Flex Order">
@@ -138,7 +138,7 @@
                 <div slot="desc">
                     <p>Use Flex's <code>order</code> to change the layout order.</p>
                 </div>
-                <i-code lang="html" slot="code">{{ code.order }}</i-code>
+                <i-code :title="title" lang="html" slot="code">{{ code.order }}</i-code>
             </Demo>
 
             <Demo title="Grid Sort">
@@ -151,7 +151,7 @@
                 <div slot="desc">
                     <p>Using <code>push</code> and <code>pull</code> will change the column's order.</p>
                 </div>
-                <i-code lang="html" slot="code">{{ code.push }}</i-code>
+                <i-code :title="title" lang="html" slot="code">{{ code.push }}</i-code>
             </Demo>
 
             <Demo title="Column Offset">
@@ -173,7 +173,7 @@
                 <div slot="desc">
                     <p>Using the <code>offset</code> property will set the column's left or right offset.</p>
                 </div>
-                <i-code lang="html" slot="code">{{ code.offset }}</i-code>
+                <i-code :title="title" lang="html" slot="code">{{ code.offset }}</i-code>
             </Demo>
 
             <Demo title="Flex Layout">
@@ -217,7 +217,7 @@
                 <div slot="desc">
                     <p>Passing <code>justify</code> property to <code>row</code> will set the child element's arrangement. Effective when using <code>flex</code>.</p>
                 </div>
-                <i-code lang="html" slot="code">{{ code.justify }}</i-code>
+                <i-code :title="title" lang="html" slot="code">{{ code.justify }}</i-code>
             </Demo>
 
             <Demo title="Flex Alignment">
@@ -247,7 +247,7 @@
                 <div slot="desc">
                     <p>Passing <code>align</code> to <code>row</code> will align child elements vertically. Effective when using <code>flex</code>.</p>
                 </div>
-                <i-code lang="html" slot="code">{{ code.align }}</i-code>
+                <i-code :title="title" lang="html" slot="code">{{ code.align }}</i-code>
             </Demo>
 
             <Demo title="Responsive Layout">
@@ -262,7 +262,7 @@
                     <p>Refer to Bootstrap's <a href="http://getbootstrap.com/css/#grid-media-queries" target="_blank">responsive design</a> using 4 preset definitions: <code>xs</code> <code>sm</code> <code>md</code> <code>lg</code>. See also API section</p>
                     <p>Adjust your browser's dimensions to see the effect.</p>
                 </div>
-                <i-code lang="html" slot="code">{{ code.reponsive }}</i-code>
+                <i-code :title="title" lang="html" slot="code">{{ code.reponsive }}</i-code>
             </Demo>
 
             <Demo title="Other Responsive Properties">
@@ -277,7 +277,7 @@
                     <p><code>span</code> <code>pull</code> <code>push</code> <code>offset</code> <code>order</code> properties can be used with <code>xs</code> <code>sm</code> <code>md</code> <code>lg</code>.</p>
                     <p><code>:xs="6"</code> would equal to <code>:xs="{ span: 6 }"</code>.</p>
                 </div>
-                <i-code lang="html" slot="code">{{ code.reponsive2 }}</i-code>
+                <i-code :title="title" lang="html" slot="code">{{ code.reponsive2 }}</i-code>
             </Demo>
 
             <div class="api">

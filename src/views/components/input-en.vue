@@ -14,7 +14,7 @@
                     <p>Basic usage. You can use <code>v-model</code> to enable a two-way bingding on data.</p>
                     <p>You can directly set style to change the width of the input box. Default: 100%</p>
                 </div>
-                <i-code lang="html" slot="code">{{ code.base }}</i-code>
+                <i-code :title="title" lang="html" slot="code">{{ code.base }}</i-code>
             </Demo>
             <Demo title="Size">
                 <div slot="demo">
@@ -34,7 +34,7 @@
                     <p>There are three size of input box: large, medium(default), small.</p>
                     <p>Set <code>size</code> to <code>large</code> or <code>small</code> to change the size.</p>
                 </div>
-                <i-code lang="html" slot="code">{{ code.size }}</i-code>
+                <i-code :title="title" lang="html" slot="code">{{ code.size }}</i-code>
             </Demo>
             <Demo title="Input with Icon">
                 <div slot="demo">
@@ -44,7 +44,7 @@
                     <p>Add an icon at the left of the input box by setting <code>icon</code> prop.</p>
                     <p><code>on-click</code> event will be emitted when clicking the icon.</p>
                 </div>
-                <i-code lang="html" slot="code">{{ code.icon }}</i-code>
+                <i-code :title="title" lang="html" slot="code">{{ code.icon }}</i-code>
             </Demo>
             <Demo title="Textarea">
                 <div slot="demo">
@@ -61,7 +61,7 @@
                     <p>Set <code>type</code> to <code>textarea</code> to use textarea for multirow input.</p>
                     <p>Control the display row numbers by setting <code>rows</code> prop.</p>
                 </div>
-                <i-code lang="html" slot="code">{{ code.textarea }}</i-code>
+                <i-code :title="title" lang="html" slot="code">{{ code.textarea }}</i-code>
             </Demo>
             <Demo title="Self-adapting Textarea">
                 <div slot="demo">
@@ -78,7 +78,7 @@
                     <p>Textarea will adapt the height automaticlly when <code>autosize</code> is set.</p>
                     <p><code>autosize</code> can be set to an object to asign the maximum and minimum number of the row.</p>
                 </div>
-                <i-code lang="html" slot="code">{{ code.autosize }}</i-code>
+                <i-code :title="title" lang="html" slot="code">{{ code.autosize }}</i-code>
             </Demo>
             <Demo title="Disable">
                 <div slot="demo">
@@ -94,7 +94,7 @@
                 <div slot="desc">
                     <p>Add <code>disabled</code> prop to disable inputting.</p>
                 </div>
-                <i-code lang="html" slot="code">{{ code.disabled }}</i-code>
+                <i-code :title="title" lang="html" slot="code">{{ code.disabled }}</i-code>
             </Demo>
             <Demo title="Mixed Input">
                 <div slot="demo">
@@ -126,7 +126,7 @@
                 <div slot="desc">
                     Set preposed or postposed slot to realise a mixin input.
                 </div>
-                <i-code lang="html" slot="code">{{ code.addon }}</i-code>
+                <i-code :title="title" lang="html" slot="code">{{ code.addon }}</i-code>
             </Demo>
             <div class="api">
                 <Anchor title="API" h2></Anchor>

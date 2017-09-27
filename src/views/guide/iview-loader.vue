@@ -8,17 +8,17 @@
             <Anchor title="使用方法" h2></Anchor>
             <Anchor title="安装" h3></Anchor>
             <p>首先通过 npm 安装 iview-loader</p>
-            <i-code lang="auto" bg>{{ code.loader.install }}</i-code>
+            <i-code :title="title" lang="auto" bg>{{ code.loader.install }}</i-code>
             <Anchor title="配置" h3></Anchor>
             <p>配置 webpack，改写平时 vue-loader 的配置，形如：</p>
-            <i-code bg>{{ code.loader.webpack }}</i-code>
+            <i-code :title="title" bg>{{ code.loader.webpack }}</i-code>
             <Anchor title="说明" h3></Anchor>
             <ul>
                 <li>可以直接写 <code>&lt;Switch&gt;</code> 和 <code>&lt;Circle&gt;</code> 这两个标签；</li>
                 <li>参数 <code>prefix</code> 设置为 <code>true</code> 后，所有 iView 组件标签名都可以使用前缀 <code>i-</code>，例如 <code>&lt;i-row&gt;</code>、<code>&lt;i-select&gt;</code></li>
             </ul>
             <p>完整的标签名如下：</p>
-            <i-code bg>{{ code.loader.tags }}</i-code>
+            <i-code :title="title" bg>{{ code.loader.tags }}</i-code>
         </article>
     </i-article>
 </template>

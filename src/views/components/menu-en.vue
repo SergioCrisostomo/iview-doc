@@ -50,7 +50,7 @@
                     <p>Select a theme by setting <code>theme</code> prop to <code>light</code>, <code>dark</code>, <code>primary</code>.</p>
                     <p>Set <code>on-select</code> event to get the name of the clicked menu item, then you can control the router or do custom operations.</p>
                 </div>
-                <i-code lang="html" slot="code">{{ code.base }}</i-code>
+                <i-code :title="title" lang="html" slot="code">{{ code.base }}</i-code>
             </Demo>
             <Demo title="Side Navigator" vertical hide-code>
                 <div slot="demo">
@@ -177,7 +177,7 @@
                     <p>Set <code>accordion</code> prop to open  accordion mode. Which means only one sub menu can be expanded at the same time.</p>
                     <p>Set <code>theme</code> prop to <code>light</code>, <code>dark</code> to choose a theme, but it doesn't support primary theme.</p>
                 </div>
-                <i-code lang="html" slot="code">{{ code.vertical }}</i-code>
+                <i-code :title="title" lang="html" slot="code">{{ code.vertical }}</i-code>
             </Demo>
             <Demo title="Menu Group" vertical hide-code>
                 <div slot="demo">
@@ -217,7 +217,7 @@
                         <li> <code>Submenu</code> can only be used in <code>Menu</code>. It cannot be used in <code>MenuGroup</code> or <code>MenuItem</code>.</li>
                     </ul>
                 </div>
-                <i-code lang="html" slot="code">{{ code.group }}</i-code>
+                <i-code :title="title" lang="html" slot="code">{{ code.group }}</i-code>
             </Demo>
             <div class="api">
                 <Anchor title="API" h2></Anchor>

@@ -41,19 +41,19 @@
             <p>如果您希望自己配置或使用其它工程，比如 <a href="https://github.com/vuejs/vue-cli" target="_blank">vue-cli</a>，请继续往下阅读。</p>
             <Anchor title="引入 iView" h2></Anchor>
             <p>一般在 webpack 入口页面 <code>main.js</code> 中如下配置：</p>
-            <i-code lang="js" bg>{{ code.install.import }}</i-code>
+            <i-code :title="title" lang="js" bg>{{ code.install.import }}</i-code>
             <Anchor title="按需引用" h2></Anchor>
             <p>如果您想在 webpack 中按需使用组件，减少文件体积，可以这样写：</p>
-            <i-code bg>{{ code.install.need }}</i-code>
+            <i-code :title="title" bg>{{ code.install.need }}</i-code>
             <Anchor title="特别提醒" h2></Anchor>
             <ul>
                 <li>按需引用仍然需要导入样式，即在 <strong>main.js</strong> 或根组件执行 <code>import 'iview/dist/styles/iview.css';</code></li>
                 <li>按需引用是直接引用的组件库源代码，需要借助 babel 进行编译，以 webpack 为例：</li>
-                <i-code lang="js" bg>{{ code.install.warning }}</i-code>
+                <i-code :title="title" lang="js" bg>{{ code.install.warning }}</i-code>
             </ul>
             <Anchor title="组件使用规范" h2></Anchor>
             <p>使用<code>:prop</code>传递数据格式为 数字、布尔值或函数时，必须带<code>:</code>(兼容String除外，具体看组件文档)，比如：</p>
-            <i-code lang="html" bg>{{ code.standard.prop }}</i-code>
+            <i-code :title="title" lang="html" bg>{{ code.standard.prop }}</i-code>
             <p>在非 template/render 模式下（例如使用 CDN 引用时），组件名要分隔，例如 <code>DatePicker</code> 必须要写成 <code>date-picker</code>。</p>
             <p>以下组件，在非 template/render 模式下，需要加前缀 <code>i-</code>：</p>
             <ul>

@@ -12,7 +12,7 @@
                 <div slot="desc">
                     <p>The simplest usage.</p>
                 </div>
-                <i-code lang="html" slot="code">{{ code.base }}</i-code>
+                <i-code :title="title" lang="html" slot="code">{{ code.base }}</i-code>
             </Demo>
             <Demo title="Half star">
                 <div slot="demo">
@@ -21,7 +21,7 @@
                 <div slot="desc">
                     <p>Set the attribute <code>allow-half</code> to select the half star.</p>
                 </div>
-                <i-code lang="html" slot="code">{{ code.half }}</i-code>
+                <i-code :title="title" lang="html" slot="code">{{ code.half }}</i-code>
             </Demo>
             <Demo title="Show copywriting">
                 <div slot="demo">
@@ -40,7 +40,7 @@
                     <p>Set the property <code>show-text</code> to display the prompt text.</p>
                     <p>The prompt can also be customized via the slot.</p>
                 </div>
-                <i-code lang="html" slot="code">{{ code.text }}</i-code>
+                <i-code :title="title" lang="html" slot="code">{{ code.text }}</i-code>
             </Demo>
             <Demo title="Read only">
                 <div slot="demo">
@@ -49,7 +49,7 @@
                 <div slot="desc">
                     <p>Set the property <code>disabled</code> to open read-only mode, unable to interact.</p>
                 </div>
-                <i-code lang="html" slot="code">{{ code.disabled }}</i-code>
+                <i-code :title="title" lang="html" slot="code">{{ code.disabled }}</i-code>
             </Demo>
             <div class="api">
                 <Anchor title="API" h2></Anchor>

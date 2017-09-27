@@ -31,7 +31,7 @@
                     <p>最简单的用法。</p>
                     <p>注意 Tooltip 内的文本使用了 <code>white-space: nowrap;</code>，即不自动换行，如需展示很多内容并自动换行时，建议给内容 slot 增加样式 <code>white-space: normal;</code>。</p>
                 </div>
-                <i-code lang="html" slot="code">{{ code.base }}</i-code>
+                <i-code :title="title" lang="html" slot="code">{{ code.base }}</i-code>
             </Demo>
             <Demo title="位置">
                 <div slot="demo">
@@ -85,7 +85,7 @@
                 <div slot="desc">
                     <p>组件提供了12个不同的方向显示Tooltip，具体配置可查看API。</p>
                 </div>
-                <i-code lang="html" slot="code">{{ code.placement }}</i-code>
+                <i-code :title="title" lang="html" slot="code">{{ code.placement }}</i-code>
             </Demo>
             <Demo title="自定义内容">
                 <div slot="demo">
@@ -100,7 +100,7 @@
                 <div slot="desc">
                     <p>通过自定义 slot 显示多行文本或更复杂的样式。</p>
                 </div>
-                <i-code lang="html" slot="code">{{ code.content }}</i-code>
+                <i-code :title="title" lang="html" slot="code">{{ code.content }}</i-code>
             </Demo>
             <Demo title="禁用">
                 <div slot="demo">
@@ -111,7 +111,7 @@
                 <div slot="desc">
                     <p>通过设置属性<code>disabled</code>可以禁用文字提示。</p>
                 </div>
-                <i-code lang="html" slot="code">{{ code.disabled }}</i-code>
+                <i-code :title="title" lang="html" slot="code">{{ code.disabled }}</i-code>
             </Demo>
             <Demo title="延时">
                 <div slot="demo">
@@ -122,7 +122,7 @@
                 <div slot="desc">
                     <p>通过设置属性<code>delay</code>可以延时显示文字提示，单位毫秒。</p>
                 </div>
-                <i-code lang="html" slot="code">{{ code.delay }}</i-code>
+                <i-code :title="title" lang="html" slot="code">{{ code.delay }}</i-code>
             </Demo>
             <div class="api">
                 <Anchor title="API" h2></Anchor>

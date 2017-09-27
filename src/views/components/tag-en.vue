@@ -15,7 +15,7 @@
                     <p>Usage of basic Tag, and it could be closable by set <code>closable</code> property. </p>
                     <p>Click to close the tag, it will trigger <code>on-close</code> event, you need to implement the logic of your own closure.</p>
                 </div>
-                <i-code lang="html" slot="code">{{ code.base }}</i-code>
+                <i-code :title="title" lang="html" slot="code">{{ code.base }}</i-code>
             </Demo>
             <Demo title="Type">
                 <div slot="demo">
@@ -27,7 +27,7 @@
                 <div slot="desc">
                     <p>You can select a different style type by setting the <code>type</code> property to <code>border</code> or <code>dot</code>. It is recommended to use the border when you want to close, in the legend of the scene using dot.</p>
                 </div>
-                <i-code lang="html" slot="code">{{ code.type }}</i-code>
+                <i-code :title="title" lang="html" slot="code">{{ code.type }}</i-code>
             </Demo>
             <Demo title="Colors">
                 <div slot="demo">
@@ -49,7 +49,7 @@
                 <div slot="desc">
                     <p>Four different colors.</p>
                 </div>
-                <i-code lang="html" slot="code">{{ code.color }}</i-code>
+                <i-code :title="title" lang="html" slot="code">{{ code.color }}</i-code>
             </Demo>
             <Demo title="Add & Remove Dynamically">
                 <div slot="demo">
@@ -59,7 +59,7 @@
                 <div slot="desc">
                     <p>Generating a set of Tags by array, you can add and remove dynamically.</p>
                 </div>
-                <i-code lang="html" slot="code">{{ code.add }}</i-code>
+                <i-code :title="title" lang="html" slot="code">{{ code.add }}</i-code>
             </Demo>
             <div class="api">
                 <Anchor title="API" h2></Anchor>

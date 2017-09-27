@@ -17,7 +17,7 @@
                 <div slot="desc">
                     <p>处在不同状态下的进度条，当 percent 为 100 时，自动将状态置为 success。</p>
                 </div>
-                <i-code lang="html" slot="code">{{ code.base }}</i-code>
+                <i-code :title="title" lang="html" slot="code">{{ code.base }}</i-code>
             </Demo>
             <Demo title="垂直方向">
                 <div slot="demo">
@@ -32,7 +32,7 @@
                 <div slot="desc">
                     <p>设置属性 <code>vertical</code> 将以垂直方向显示。</p>
                 </div>
-                <i-code lang="html" slot="code">{{ code.vertical }}</i-code>
+                <i-code :title="title" lang="html" slot="code">{{ code.vertical }}</i-code>
             </Demo>
             <Demo title="配合外部组件使用">
                 <div slot="demo">
@@ -45,7 +45,7 @@
                 <div slot="desc">
                     <p>通过数据的联动和逻辑控制，实现动态效果。</p>
                 </div>
-                <i-code lang="html" slot="code">{{ code.percent }}</i-code>
+                <i-code :title="title" lang="html" slot="code">{{ code.percent }}</i-code>
             </Demo>
             <Demo title="自定义更多样式">
                 <div slot="demo">
@@ -58,7 +58,7 @@
                 <div slot="desc">
                     <p>通过自定义<code>slot</code>和属性<code>stroke-width</code>改变进度条效果。</p>
                 </div>
-                <i-code lang="html" slot="code">{{ code.custom }}</i-code>
+                <i-code :title="title" lang="html" slot="code">{{ code.custom }}</i-code>
             </Demo>
             <div class="api">
                 <Anchor title="API" h2></Anchor>

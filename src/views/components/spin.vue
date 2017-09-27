@@ -53,7 +53,7 @@
                 <div slot="desc">
                     <p>最简单使用 Spin 的方法。</p>
                 </div>
-                <i-code lang="html" slot="code">{{ code.base }}</i-code>
+                <i-code :title="title" lang="html" slot="code">{{ code.base }}</i-code>
             </Demo>
             <Demo title="各种尺寸">
                 <div slot="demo">
@@ -72,7 +72,7 @@
                 <div slot="desc">
                     <p>通过设置<code>size</code>属性为<code>large</code>和<code>small</code>将 Spin 设置为大和小尺寸，不设置为默认（中）尺寸。</p>
                 </div>
-                <i-code lang="html" slot="code">{{ code.size }}</i-code>
+                <i-code :title="title" lang="html" slot="code">{{ code.size }}</i-code>
             </Demo>
             <Demo title="居中固定">
                 <div slot="demo">
@@ -83,7 +83,7 @@
                 <div slot="desc">
                     <p>在容器内部垂直居中固定，需要父级有<code>relative</code>或<code>absolute</code>。</p>
                 </div>
-                <i-code lang="html" slot="code">{{ code.fix }}</i-code>
+                <i-code :title="title" lang="html" slot="code">{{ code.fix }}</i-code>
             </Demo>
             <Demo title="自定义内容">
                 <div slot="demo">
@@ -111,7 +111,7 @@
                 <div slot="desc">
                     <p>自定义 Spin 的内容，可以是简单的文字，也可以是很复杂的动画。</p>
                 </div>
-                <i-code lang="html" slot="code">{{ code.custom }}</i-code>
+                <i-code :title="title" lang="html" slot="code">{{ code.custom }}</i-code>
             </Demo>
             <Demo title="状态切换">
                 <div slot="demo">
@@ -132,7 +132,7 @@
                 <div slot="desc">
                     <p>控制 Spin 组件的显示和消失。</p>
                 </div>
-                <i-code lang="html" slot="code">{{ code.status }}</i-code>
+                <i-code :title="title" lang="html" slot="code">{{ code.status }}</i-code>
             </Demo>
             <Demo title="整页加载">
                 <div slot="demo">
@@ -143,7 +143,7 @@
                     <p>使用内置的 <code>$Spin</code> 方法可以全局加载。</p>
                     <p>可以使用 Render 函数自定义显示内容。<studyRender></studyRender></p>
                 </div>
-                <i-code lang="html" slot="code">{{ code.$spin }}</i-code>
+                <i-code :title="title" lang="html" slot="code">{{ code.$spin }}</i-code>
             </Demo>
             <div class="api">
                 <Anchor title="API" h2></Anchor>

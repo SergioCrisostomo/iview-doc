@@ -21,7 +21,7 @@
                 <div slot="desc">
                     <p>默认位置距离页面右部和底部 30px，滚动至距顶端 400px 时显示。</p>
                 </div>
-                <i-code lang="html" slot="code">{{ code.base }}</i-code>
+                <i-code :title="title" lang="html" slot="code">{{ code.base }}</i-code>
             </Demo>
             <Demo title="自定义样式">
                 <div slot="demo">
@@ -33,7 +33,7 @@
                 <div slot="desc">
                     <p>自定义了位置在页面底部 200px,滚动至距顶端 200px 时显示。</p>
                 </div>
-                <i-code lang="html" slot="code">{{ code.custom }}</i-code>
+                <i-code :title="title" lang="html" slot="code">{{ code.custom }}</i-code>
             </Demo>
 
             <div class="api">

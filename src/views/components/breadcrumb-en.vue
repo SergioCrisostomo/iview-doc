@@ -22,7 +22,7 @@
                 <div slot="desc">
                     <p>Simplest usage: add link by setting <code>href</code> prop.</p>
                 </div>
-                <i-code lang="html" slot="code">{{ code.base }}</i-code>
+                <i-code :title="title" lang="html" slot="code">{{ code.base }}</i-code>
             </Demo>
             <Demo title="With Icon">
                 <div slot="demo">
@@ -41,7 +41,7 @@
                 <div slot="desc">
                     <p>可自定义每项的内容，比如带有一个图标。</p>
                 </div>
-                <i-code lang="html" slot="code">{{ code.icon }}</i-code>
+                <i-code :title="title" lang="html" slot="code">{{ code.icon }}</i-code>
             </Demo>
             <Demo title="Separator">
                 <div slot="demo">
@@ -59,7 +59,7 @@
                 <div slot="desc">
                     <p>Customize separator by setting <code>separator</code> prop like <code> > </code>. Customized HTML string is also acceptable.</p>
                 </div>
-                <i-code lang="html" slot="code">{{ code.separator }}</i-code>
+                <i-code :title="title" lang="html" slot="code">{{ code.separator }}</i-code>
             </Demo>
             <div class="api">
                 <Anchor title="API" h2></Anchor>

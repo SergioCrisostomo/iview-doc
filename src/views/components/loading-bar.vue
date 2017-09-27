@@ -7,9 +7,9 @@
             <Anchor title="说明" h2></Anchor>
             <p>LoadingBar 只会在全局创建一个，因此在任何位置调用的方法都会控制这同一个组件。主要使用场景是路由切换和Ajax，因为这两者都不能拿到精确的进度，LoadingBar 会模拟进度，当然也可以通过<code>update()</code>方法来传入一个精确的进度，比如在文件上传时会很有用，具体见API。</p>
             <Anchor title="在路由中使用" h4></Anchor>
-            <i-code bg>{{ code.router }}</i-code>
+            <i-code :title="title" bg>{{ code.router }}</i-code>
             <Anchor title="在异步请求中使用" h4></Anchor>
-            <i-code bg lang="html">{{ code.ajax }}</i-code>
+            <i-code :title="title" bg lang="html">{{ code.ajax }}</i-code>
             <Anchor title="代码示例" h2></Anchor>
             <Demo title="基本用法">
                 <div slot="demo">
@@ -20,7 +20,7 @@
                 <div slot="desc">
                     <p>点击 Start 开始进度，点击 Finish 结束。在调用<code>start()</code>方法后，组件会自动模拟进度，当调用<code>finish()</code>或<code>error()</code>时，补全进度并自动消失。</p>
                 </div>
-                <i-code lang="html" slot="code">{{ code.base }}</i-code>
+                <i-code :title="title" lang="html" slot="code">{{ code.base }}</i-code>
             </Demo>
             <div class="api">
                 <Anchor title="API" h2></Anchor>
@@ -82,7 +82,7 @@
                     </li>
                 </ul>
                 <br>
-                <i-code bg>{{ code.config }}</i-code>
+                <i-code :title="title" bg>{{ code.config }}</i-code>
                 <br>
                 <table>
                     <thead>

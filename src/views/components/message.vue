@@ -12,7 +12,7 @@
                 <div slot="desc">
                     <p>最基本的提示，默认在1.5秒后消失。</p>
                 </div>
-                <i-code lang="html" slot="code">{{ code.info }}</i-code>
+                <i-code :title="title" lang="html" slot="code">{{ code.info }}</i-code>
             </Demo>
             <Demo title="提示类型">
                 <div slot="demo">
@@ -23,7 +23,7 @@
                 <div slot="desc">
                     <p>不同的提示状态：成功、警告、错误。</p>
                 </div>
-                <i-code lang="html" slot="code">{{ code.type }}</i-code>
+                <i-code :title="title" lang="html" slot="code">{{ code.type }}</i-code>
             </Demo>
             <Demo title="加载中">
                 <div slot="demo">
@@ -32,7 +32,7 @@
                 <div slot="desc">
                     <p>Loading 的状态，并异步在某个时机移除。</p>
                 </div>
-                <i-code lang="html" slot="code">{{ code.loading }}</i-code>
+                <i-code :title="title" lang="html" slot="code">{{ code.loading }}</i-code>
             </Demo>
             <Demo title="自定义时长">
                 <div slot="demo">
@@ -41,7 +41,7 @@
                 <div slot="desc">
                     <p>自定义时长，也可以在<code>Message.config()</code>中全局配置，详见API。</p>
                 </div>
-                <i-code lang="html" slot="code">{{ code.time }}</i-code>
+                <i-code :title="title" lang="html" slot="code">{{ code.time }}</i-code>
             </Demo>
             <Demo title="可关闭">
                 <div slot="demo">
@@ -50,7 +50,7 @@
                 <div slot="desc">
                     <p>将参数设置为一个对象，并指定 <code>closable</code> 为 true 后可以手动关闭提示，完整参数详见API。</p>
                 </div>
-                <i-code lang="html" slot="code">{{ code.closable }}</i-code>
+                <i-code :title="title" lang="html" slot="code">{{ code.closable }}</i-code>
             </Demo>
             <div class="api">
                 <Anchor title="API" h2></Anchor>
@@ -120,7 +120,7 @@
                     </li>
                 </ul>
                 <br>
-                <i-code bg>{{ code.config }}</i-code>
+                <i-code :title="title" bg>{{ code.config }}</i-code>
                 <br>
                 <table>
                     <thead>

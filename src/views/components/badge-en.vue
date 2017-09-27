@@ -28,7 +28,7 @@
                 <div slot="desc">
                     <p>The simplest usage.</p>
                 </div>
-                <i-code lang="html" slot="code">{{ code.base }}</i-code>
+                <i-code :title="title" lang="html" slot="code">{{ code.base }}</i-code>
             </Demo>
             <Demo title="Little Red Dot">
                 <div slot="demo">
@@ -53,7 +53,7 @@
                 <div slot="desc">
                     <p>Never use it if you have Qiang Po Zheng (Those who feel uncomfortable with any discordant things). </p>
                 </div>
-                <i-code lang="html" slot="code">{{ code.dot }}</i-code>
+                <i-code :title="title" lang="html" slot="code">{{ code.dot }}</i-code>
             </Demo>
             <Demo title="Overflow Count">
                 <div slot="demo">
@@ -73,7 +73,7 @@
                 <div slot="desc">
                     <p>You can set a maximal count by setting <code>overflow-count</code>.  When message count exceed the number, <code>${overflowCount}+</code> will be shown.</p>
                 </div>
-                <i-code lang="html" slot="code">{{ code.overflow }}</i-code>
+                <i-code :title="title" lang="html" slot="code">{{ code.overflow }}</i-code>
             </Demo>
             <Demo title="Standalone Usage and Customized Style">
                 <div slot="demo">
@@ -83,7 +83,7 @@
                 <div slot="desc">
                     <p>Display without slot.</p>
                 </div>
-                <i-code lang="html" slot="code">{{ code.alone }}</i-code>
+                <i-code :title="title" lang="html" slot="code">{{ code.alone }}</i-code>
             </Demo>
             <div class="api">
                 <Anchor title="API" h2></Anchor>

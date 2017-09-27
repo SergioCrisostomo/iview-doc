@@ -18,7 +18,7 @@
                     <p>Basic usage. It'll be closed after 4.5 sec by default. If <code>desc</code> prop is empty or not set, Title-Only style will be used.</p>
                     <p>We suggest that the title should be as clear as possiblem like "Delete Sucessfully" etc. Detail content can be placed into description area.</p>
                 </div>
-                <i-code lang="html" slot="code">{{ code.open }}</i-code>
+                <i-code :title="title" lang="html" slot="code">{{ code.open }}</i-code>
             </Demo>
             <Demo title="Notice Type">
                 <div slot="demo">
@@ -36,7 +36,7 @@
                 <div slot="desc">
                     <p>Notice with status icon.</p>
                 </div>
-                <i-code lang="html" slot="code">{{ code.type }}</i-code>
+                <i-code :title="title" lang="html" slot="code">{{ code.type }}</i-code>
             </Demo>
             <Demo title="Custom Duration">
                 <div slot="demo">
@@ -45,7 +45,7 @@
                 <div slot="desc">
                     <p>Set duration to 0 to disable auto close. You can also configure Notice globally in <code>Notice.config()</code>. Details on API Doc.</p>
                 </div>
-                <i-code lang="html" slot="code">{{ code.time }}</i-code>
+                <i-code :title="title" lang="html" slot="code">{{ code.time }}</i-code>
             </Demo>
             <div class="api">
                 <Anchor title="API" h2></Anchor>
@@ -124,7 +124,7 @@
                     </li>
                 </ul>
                 <br>
-                <i-code bg>{{ code.config }}</i-code>
+                <i-code :title="title" bg>{{ code.config }}</i-code>
                 <br>
                 <table>
                     <thead>

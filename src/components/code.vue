@@ -43,7 +43,7 @@
                 <input type="hidden" name="js" :value="jsFiddleData.js" />
                 <input type="hidden" name="css" :value="jsFiddleData.css" />
                 <input type="hidden" name="html" :value="jsFiddleData.html" />
-                <input type="hidden" name="title" :value="jsFiddleData.title" />
+                <input type="hidden" name="title" :value="title" />
             </form>
         </span>
         <span class="scale" @click="scale">
@@ -67,6 +67,10 @@
             lang: {
                 type: String,
                 default: 'javascript'
+            },
+            title: {
+                type: String,
+                default: ''
             },
             bg: {
                 type: Boolean,
@@ -150,7 +154,6 @@
                 jsContructorObject.template = `<div>${template}</div>`;
 
                 const APIData = {
-                  title: 'Component title',
                   js: `new Vue(${JSON.stringify(jsContructorObject, null, '  ')});`,
                   css: style + '\n#component {padding: 20px;}',
                   html: [

@@ -8,17 +8,17 @@
             <Anchor title="Usage" h2></Anchor>
             <Anchor title="Install" h3></Anchor>
             <p>First, install iview-loader through npm</p>
-            <i-code lang="auto" bg>{{ code.loader.install }}</i-code>
+            <i-code :title="title" lang="auto" bg>{{ code.loader.install }}</i-code>
             <Anchor title="Setting" h3></Anchor>
             <p>Configure webpack to rewrite the normal vue-loader configuration, such as: </p>
-            <i-code bg>{{ code.loader.webpack }}</i-code>
+            <i-code :title="title" bg>{{ code.loader.webpack }}</i-code>
             <Anchor title="Illustrate" h3></Anchor>
             <ul>
                 <li>You can write <code>&lt;Switch&gt;</code> and <code>&lt;Circle&gt;</code> tags now；</li>
                 <li>After the parameter <code>prefix</code> is set to <code>true</code>, all iView component tag names can be prefixed, such as <code>&lt;i-row&gt;</code> and <code>&lt;i-select&gt;</code> .</li>
             </ul>
             <p>The following is the complete tag name: </p>
-            <i-code bg>{{ code.loader.tags }}</i-code>
+            <i-code :title="title" bg>{{ code.loader.tags }}</i-code>
         </article>
     </i-article>
 </template>

@@ -18,7 +18,7 @@
                     <p>基本用法，默认在 4.5秒后关闭。如果 <code>desc</code> 参数为空或不填，则自动应用仅标题模式下的样式。</p>
                     <p>建议标题言简意赅，例如"删除成功"，更详细的内容可以放在描述信息里。</p>
                 </div>
-                <i-code lang="html" slot="code">{{ code.open }}</i-code>
+                <i-code :title="title" lang="html" slot="code">{{ code.open }}</i-code>
             </Demo>
             <Demo title="提醒类型">
                 <div slot="demo">
@@ -36,7 +36,7 @@
                 <div slot="desc">
                     <p>带有状态图标的提醒。</p>
                 </div>
-                <i-code lang="html" slot="code">{{ code.type }}</i-code>
+                <i-code :title="title" lang="html" slot="code">{{ code.type }}</i-code>
             </Demo>
             <Demo title="自定义时长">
                 <div slot="demo">
@@ -45,7 +45,7 @@
                 <div slot="desc">
                     <p>自定义时长，为 0 则不自动关闭。也可以在<code>Notice.config()</code>中全局配置，详见API。</p>
                 </div>
-                <i-code lang="html" slot="code">{{ code.time }}</i-code>
+                <i-code :title="title" lang="html" slot="code">{{ code.time }}</i-code>
             </Demo>
             <div class="api">
                 <Anchor title="API" h2></Anchor>
@@ -124,7 +124,7 @@
                     </li>
                 </ul>
                 <br>
-                <i-code bg>{{ code.config }}</i-code>
+                <i-code :title="title" bg>{{ code.config }}</i-code>
                 <br>
                 <table>
                     <thead>

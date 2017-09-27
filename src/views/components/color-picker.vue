@@ -21,7 +21,7 @@
                 <div slot="desc">
                     <p>基本用法，可以使用 <code>v-model</code> 实现数据的双向绑定。</p>
                 </div>
-                <i-code lang="html" slot="code">{{ code.base }}</i-code>
+                <i-code :title="title" lang="html" slot="code">{{ code.base }}</i-code>
             </Demo>
             <Demo title="透明度">
                 <div slot="demo">
@@ -30,7 +30,7 @@
                 <div slot="desc">
                     <p>开启属性 <code>alpha</code>，可以选择带 Alpha 通道的颜色。</p>
                 </div>
-                <i-code lang="html" slot="code">{{ code.alpha }}</i-code>
+                <i-code :title="title" lang="html" slot="code">{{ code.alpha }}</i-code>
             </Demo>
             <Demo title="颜色预设">
                 <div slot="demo">
@@ -46,7 +46,7 @@
                 <div slot="desc">
                     <p>开启属性 <code>recommend</code> 可以显示推荐的颜色预设，或设置属性 <code>colors</code> 来自定义预设颜色。</p>
                 </div>
-                <i-code lang="html" slot="code">{{ code.colors }}</i-code>
+                <i-code :title="title" lang="html" slot="code">{{ code.colors }}</i-code>
             </Demo>
             <Demo title="尺寸">
                 <div slot="demo">
@@ -65,7 +65,7 @@
                 <div slot="desc">
                     <p>选择器有三种尺寸：大、默认（中）、小。</p>
                 </div>
-                <i-code lang="html" slot="code">{{ code.size }}</i-code>
+                <i-code :title="title" lang="html" slot="code">{{ code.size }}</i-code>
             </Demo>
 
             <div class="api">

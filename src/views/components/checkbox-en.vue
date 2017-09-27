@@ -18,7 +18,7 @@
                 <div slot="desc">
                     <p>Use v-model to enable two-way binding.</p>
                 </div>
-                <i-code lang="html" slot="code">{{ code.single }}</i-code>
+                <i-code :title="title" lang="html" slot="code">{{ code.single }}</i-code>
             </Demo>
             <Demo title="Combination Usage">
                 <div slot="demo">
@@ -51,7 +51,7 @@
                 <div slot="desc">
                     <p>Use <code>CheckboxGroup</code> combined with array to generate a combination. In this case, <code>Checkbox</code> uses <code>label</code> to judge selected state automatically. The content of each Checkbox can be customized. If not filled, the value of label prop will be used by default.</p>
                 </div>
-                <i-code lang="html" slot="code">{{ code.group }}</i-code>
+                <i-code :title="title" lang="html" slot="code">{{ code.group }}</i-code>
             </Demo>
             <Demo title="Disabled">
                 <div slot="demo">
@@ -67,7 +67,7 @@
                 <div slot="desc">
                     <p>To disable Checkbox by setting <code>disabled</code> prop.</p>
                 </div>
-                <i-code lang="html" slot="code">{{ code.disabled }}</i-code>
+                <i-code :title="title" lang="html" slot="code">{{ code.disabled }}</i-code>
             </Demo>
             <Demo title="Communication with Other Components">
                 <div slot="demo">
@@ -91,7 +91,7 @@
                 <div slot="desc">
                     <p>Data linking with other components.</p>
                 </div>
-                <i-code lang="html" slot="code">{{ code.communication }}</i-code>
+                <i-code :title="title" lang="html" slot="code">{{ code.communication }}</i-code>
             </Demo>
             <Demo title="Select All">
                 <div slot="demo">
@@ -110,7 +110,7 @@
                 <div slot="desc">
                     <p>You might use <code>indeterminate</code> prop when realise select-all effect. The demo code is just a kind of realisation. There are many other ways you can use in your bussiness.</p>
                 </div>
-                <i-code lang="html" slot="code">{{ code.indeterminate }}</i-code>
+                <i-code :title="title" lang="html" slot="code">{{ code.indeterminate }}</i-code>
             </Demo>
             <div class="api">
                 <Anchor title="API" h2></Anchor>

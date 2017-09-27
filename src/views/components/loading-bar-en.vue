@@ -7,9 +7,9 @@
             <Anchor title="Explanation" h2></Anchor>
             <p>LoadingBar will be created only once globally, so you'll control the same component no matter where you call the methods. It is mainly used on route changing or Ajax. In those two situations, operation cannot get the accurate progress rate, so LoadingBar will simulate the progress rate. You can also use <code>update()</code> to pass an accurate progress rate. Details on API Doc.</p>
             <Anchor title="Using in Router" h4></Anchor>
-            <i-code bg>{{ code.router }}</i-code>
+            <i-code :title="title" bg>{{ code.router }}</i-code>
             <Anchor title="Using in Asynchronous Request" h4></Anchor>
-            <i-code bg lang="html">{{ code.ajax }}</i-code>
+            <i-code :title="title" bg lang="html">{{ code.ajax }}</i-code>
             <Anchor title="Examples" h2></Anchor>
             <Demo title="Basic Usage">
                 <div slot="demo">
@@ -20,7 +20,7 @@
                 <div slot="desc">
                     <p>Click Start to start loading. Click Finish to complete. When calling <code>start()</code> method, the component will automatically simulate the loading bar. When calling <code>finish()</code> or <code>error()</code> methods, the loading bar will be fulfilled and then disappear.</p>
                 </div>
-                <i-code lang="html" slot="code">{{ code.base }}</i-code>
+                <i-code :title="title" lang="html" slot="code">{{ code.base }}</i-code>
             </Demo>
             <div class="api">
                 <Anchor title="API" h2></Anchor>
@@ -82,7 +82,7 @@
                     </li>
                 </ul>
                 <br>
-                <i-code bg>{{ code.config }}</i-code>
+                <i-code :title="title" bg>{{ code.config }}</i-code>
                 <br>
                 <table>
                     <thead>

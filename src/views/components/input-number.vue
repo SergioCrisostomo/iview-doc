@@ -12,7 +12,7 @@
                 <div slot="desc">
                     <p>可以通过输入、鼠标点击或键盘的上下键来改变数值大小。</p>
                 </div>
-                <i-code lang="html" slot="code">{{ code.base }}</i-code>
+                <i-code :title="title" lang="html" slot="code">{{ code.base }}</i-code>
             </Demo>
             <Demo title="小数">
                 <div slot="demo">
@@ -21,7 +21,7 @@
                 <div slot="desc">
                     <p>通过设置<code>step</code>属性控制每次改变的精度。</p>
                 </div>
-                <i-code lang="html" slot="code">{{ code.step }}</i-code>
+                <i-code :title="title" lang="html" slot="code">{{ code.step }}</i-code>
             </Demo>
             <Demo title="尺寸">
                 <div slot="demo">
@@ -32,7 +32,7 @@
                 <div slot="desc">
                     <p>通过设置<code>size</code>属性为<code>large</code>和<code>small</code>将输入框设置为大和小尺寸，不设置为默认（中）尺寸。</p>
                 </div>
-                <i-code lang="html" slot="code">{{ code.size }}</i-code>
+                <i-code :title="title" lang="html" slot="code">{{ code.size }}</i-code>
             </Demo>
             <Demo title="不可用">
                 <div slot="demo">
@@ -42,7 +42,7 @@
                 <div slot="desc">
                     <p>通过设置<code>disabled</code>属性禁用输入框，点击按钮切换状态。</p>
                 </div>
-                <i-code lang="html" slot="code">{{ code.disabled }}</i-code>
+                <i-code :title="title" lang="html" slot="code">{{ code.disabled }}</i-code>
             </Demo>
             <div class="api">
                 <Anchor title="API" h2></Anchor>

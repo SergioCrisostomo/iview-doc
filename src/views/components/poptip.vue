@@ -41,7 +41,7 @@
                     <p>支持三种触发方式：鼠标悬停、点击、聚焦。默认是点击。</p>
                     <p>注意 Poptip 内的文本使用了 <code>white-space: nowrap;</code>，即不自动换行，如需展示很多内容并自动换行时，建议给内容 slot 增加样式 <code>white-space: normal;</code>。</p>
                 </div>
-                <i-code lang="html" slot="code">{{ code.base }}</i-code>
+                <i-code :title="title" lang="html" slot="code">{{ code.base }}</i-code>
             </Demo>
             <Demo title="位置">
                 <div slot="demo">
@@ -95,7 +95,7 @@
                 <div slot="desc">
                     <p>组件提供了12个不同的方向显示Poptip，具体配置可查看API。。</p>
                 </div>
-                <i-code lang="html" slot="code">{{ code.placement }}</i-code>
+                <i-code :title="title" lang="html" slot="code">{{ code.placement }}</i-code>
             </Demo>
             <Demo title="从浮层内关闭">
                 <div slot="demo">
@@ -110,7 +110,7 @@
                 <div slot="desc">
                     <p>通过<code>v-model</code>来控制提示框的显示和隐藏。</p>
                 </div>
-                <i-code lang="html" slot="code">{{ code.visible }}</i-code>
+                <i-code :title="title" lang="html" slot="code">{{ code.visible }}</i-code>
             </Demo>
             <Demo title="嵌套复杂内容">
                 <div slot="demo">
@@ -149,7 +149,7 @@
                 <div slot="desc">
                     <p>通过自定义 slot 来实现复杂的内容。</p>
                 </div>
-                <i-code lang="html" slot="code">{{ code.slot }}</i-code>
+                <i-code :title="title" lang="html" slot="code">{{ code.slot }}</i-code>
             </Demo>
             <Demo title="确认框">
                 <div slot="demo">
@@ -173,7 +173,7 @@
                 <div slot="desc">
                     <p>通过设置属性<code>confirm</code>开启确认框模式。确认框只会以 click 的形式激活，并且只会显示 title 的内容，忽略 content。</p>
                 </div>
-                <i-code lang="html" slot="code">{{ code.confirm }}</i-code>
+                <i-code :title="title" lang="html" slot="code">{{ code.confirm }}</i-code>
             </Demo>
             <div class="api">
                 <Anchor title="API" h2></Anchor>

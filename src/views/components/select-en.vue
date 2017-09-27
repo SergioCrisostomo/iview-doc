@@ -29,7 +29,7 @@
                     <p>You can add style css for <code>Select</code>，such as width.</p>
                     <p>After expanding select, you can select up and down with the <code>Up</code>and<code>Down</code> key, Press<code>Enter</code>to confirm，press<code>Esc</code>to collapse.</p>
                 </div>
-                <i-code lang="html" slot="code">{{ code.base }}</i-code>
+                <i-code :title="title" lang="html" slot="code">{{ code.base }}</i-code>
             </Demo>
             <Demo title="Size">
                 <div slot="demo">
@@ -47,7 +47,7 @@
                     <p>There are three size of select: large, medium(default), small.</p>
                     <p>Set<code>size</code>property to <code>large</code>or<code>small</code>.</p>
                 </div>
-                <i-code lang="html" slot="code">{{ code.size }}</i-code>
+                <i-code :title="title" lang="html" slot="code">{{ code.size }}</i-code>
             </Demo>
             <Demo title="Disable">
                 <div slot="demo">
@@ -64,7 +64,7 @@
                     <p>Add <code>disabled</code> property to <code>Select</code> can disable the select.</p>
                     <p>Add <code>disabled</code> property to <code>Option</code> can disable that option.</p>
                 </div>
-                <i-code lang="html" slot="code">{{ code.disabled }}</i-code>
+                <i-code :title="title" lang="html" slot="code">{{ code.disabled }}</i-code>
             </Demo>
             <Demo title="clearable">
                 <div slot="demo">
@@ -76,7 +76,7 @@
                 <div slot="desc">
                     <p>Add <code>clearable</code> property can clear the selected option，which only used for single select.</p>
                 </div>
-                <i-code lang="html" slot="code">{{ code.clearable }}</i-code>
+                <i-code :title="title" lang="html" slot="code">{{ code.clearable }}</i-code>
             </Demo>
             <Demo title="Group">
                 <div slot="demo">
@@ -93,7 +93,7 @@
                 <div slot="desc">
                     <p>Using <code>OptionGroup</code> component can group the options.</p>
                 </div>
-                <i-code lang="html" slot="code">{{ code.group }}</i-code>
+                <i-code :title="title" lang="html" slot="code">{{ code.group }}</i-code>
             </Demo>
             <Demo title="Customize Template">
                 <div slot="demo">
@@ -117,7 +117,7 @@
                     <p>Customize the option content. When using <code>label</code> property in <code>Option</code>, the option will show the label preferentially. Otherwise the selected content will be same with the customise content and that is not what we want.</p>
                     <p>The logic of showing the option content：show slot content firstly.If there is no slot, it will show the content of <code>label</code>. If there is no label property, it will show the <code>value</code></p>
                 </div>
-                <i-code lang="html" slot="code">{{ code.label }}</i-code>
+                <i-code :title="title" lang="html" slot="code">{{ code.label }}</i-code>
             </Demo>
             <Demo title="Multiple">
                 <div slot="demo">
@@ -129,7 +129,7 @@
                 <div slot="desc">
                     <p>Add <code>multiple</code> property can support multiple select. In the multiple mode model accept an Array and return an Array.</p>
                 </div>
-                <i-code lang="html" slot="code">{{ code.multiple }}</i-code>
+                <i-code :title="title" lang="html" slot="code">{{ code.multiple }}</i-code>
             </Demo>
             <Demo title="Searchable">
                 <div slot="demo">
@@ -149,7 +149,7 @@
                 <div slot="desc">
                     <p>Add <code>filterable</code> property can set search mode.Single and Multiple Mode both support search. When using multiple mode to search, using <code>Delete</code> key can delete the last option.</p>
                 </div>
-                <i-code lang="html" slot="code">{{ code.filterable }}</i-code>
+                <i-code :title="title" lang="html" slot="code">{{ code.filterable }}</i-code>
             </Demo>
             <Demo title="Remote Search">
                 <div slot="demo">
@@ -183,7 +183,7 @@
                     <p>Set the <code>label</code> attribute to set the initial display value.</p>
                     <p>The example is America state, try to input some.</p>
                 </div>
-                <i-code lang="html" slot="code">{{ code.remote }}</i-code>
+                <i-code :title="title" lang="html" slot="code">{{ code.remote }}</i-code>
             </Demo>
             <div class="api">
                 <Anchor title="API" h2></Anchor>

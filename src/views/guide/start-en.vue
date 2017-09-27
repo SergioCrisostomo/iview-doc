@@ -33,19 +33,19 @@
             <p>If you prefer not to use them or use other utilities like <a href="https://github.com/vuejs/vue-cli" target="_blank">vue-cli</a>, please keep reading.</p>
             <Anchor title="Import iView" h2></Anchor>
             <p>Import iView in the entry file (<code>main.js</code> as usual) of webpack:</p>
-            <i-code lang="js" bg>{{ code.install.import }}</i-code>
+            <i-code :title="title" lang="js" bg>{{ code.install.import }}</i-code>
             <Anchor title="Import on demand" h2></Anchor>
             <p>Only import components what we need will help reduce size.</p>
-            <i-code bg>{{ code.install.need }}</i-code>
+            <i-code :title="title" bg>{{ code.install.need }}</i-code>
             <Anchor title="Reminder" h2></Anchor>
             <ul>
                 <li>Partial import will only effect logic level; you still need to import all the styles, which means add <code>import 'iview/dist/styles/iview.css';</code> to <strong>main.js</strong> or the root component.</li>
                 <li>Partial import depends on babel, so it's necessary to add module to webpack in order to let it compiled:</li>
-                <i-code lang="js" bg>{{ code.install.warning }}</i-code>
+                <i-code :title="title" lang="js" bg>{{ code.install.warning }}</i-code>
             </ul>
             <Anchor title="How to pass value to components" h2></Anchor>
             <p>Many components require adding <code>:</code> before properties for passing integer and boolean:</p>
-            <i-code lang="html" bg>{{ code.standard.prop }}</i-code>
+            <i-code :title="title" lang="html" bg>{{ code.standard.prop }}</i-code>
             <p>If not in template/render mode(such as using CDN), the component name must be separated, such as <code>DatePicker</code> should be <code>date-picker</code>. </p>
             <p>The following components, if not in template/render mode, you need to add a prefix <code>i-</code>:</p>
             <ul>

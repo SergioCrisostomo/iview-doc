@@ -39,7 +39,7 @@
                     <p>触发对象可以是链接、按钮等各种元素。</p>
                     <p>本例还展示了禁用项和分隔线。</p>
                 </div>
-                <i-code lang="html" slot="code">{{ code.base }}</i-code>
+                <i-code :title="title" lang="html" slot="code">{{ code.base }}</i-code>
             </Demo>
             <Demo title="触发方式">
                 <div slot="demo">
@@ -86,7 +86,7 @@
                     <p>通过设置属性 <code>trigger</code> 可以更改触发方式，可选项为 click 、 hover(默认) 或 custom(自定义)。</p>
                     <p>触发方式设置为 custom 自定义时，需手动设置 visible 属性来控制下拉框的显示。</p>
                 </div>
-                <i-code lang="html" slot="code">{{ code.trigger }}</i-code>
+                <i-code :title="title" lang="html" slot="code">{{ code.trigger }}</i-code>
             </Demo>
             <Demo title="对齐方向">
                 <div slot="demo">
@@ -133,7 +133,7 @@
                 <div slot="desc">
                     <p>通过设置属性 <code>placement</code> 可以更改下拉菜单出现的方向，与 Poptip 和 Tooltip 配置一致，支持 12 个方向，详见 API。</p>
                 </div>
-                <i-code lang="html" slot="code">{{ code.placement }}</i-code>
+                <i-code :title="title" lang="html" slot="code">{{ code.placement }}</i-code>
             </Demo>
             <Demo title="嵌套用法">
                 <div slot="demo">
@@ -163,7 +163,7 @@
                 <div slot="desc">
                     <p>下拉菜单可以进行嵌套实现级联的效果，嵌套时注意设置子集的展开方向。</p>
                 </div>
-                <i-code lang="html" slot="code">{{ code.nest }}</i-code>
+                <i-code :title="title" lang="html" slot="code">{{ code.nest }}</i-code>
             </Demo>
             <div class="api">
                 <Anchor title="API" h2></Anchor>

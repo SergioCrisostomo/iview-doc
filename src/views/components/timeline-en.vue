@@ -43,7 +43,7 @@
                 <div slot="desc">
                     <p>Basic timeline.</p>
                 </div>
-                <i-code lang="html" slot="code">{{ code.base }}</i-code>
+                <i-code :title="title" lang="html" slot="code">{{ code.base }}</i-code>
             </Demo>
             <Demo title="Circle Colors">
                 <div slot="demo">
@@ -57,7 +57,7 @@
                 <div slot="desc">
                     <p>Use various colors to indicate different situations. You can use <code>green</code>, <code>red</code>, <code>blue</code> or custom defined colors. Default color is blue.</p>
                 </div>
-                <i-code lang="html" slot="code">{{ code.color }}</i-code>
+                <i-code :title="title" lang="html" slot="code">{{ code.color }}</i-code>
             </Demo>
             <Demo title="Last Item">
                 <div slot="demo">
@@ -71,7 +71,7 @@
                 <div slot="desc">
                     <p>Passing a <code>pending</code> property marks the last item as a ghost node, indicating incompleteness.</p>
                 </div>
-                <i-code lang="html" slot="code">{{ code.pending }}</i-code>
+                <i-code :title="title" lang="html" slot="code">{{ code.pending }}</i-code>
             </Demo>
             <Demo title="Custom Timeline Items">
                 <div slot="demo">
@@ -88,7 +88,7 @@
                 <div slot="desc">
                     <p>Accepts a slot to customize the timeline item's content, such as the icon.</p>
                 </div>
-                <i-code lang="html" slot="code">{{ code.dot }}</i-code>
+                <i-code :title="title" lang="html" slot="code">{{ code.dot }}</i-code>
             </Demo>
             <div class="api">
                 <Anchor title="API" h2></Anchor>

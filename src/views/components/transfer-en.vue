@@ -20,7 +20,7 @@
                     <code>@on-change</code>: Emitted when clicking transfer button. Transfer won't transfer data itself. You should handle it by yourself.
                 </li>
                 <p>Demo:</p>
-                <i-code bg>{{ code.demo }}</i-code>
+                <i-code :title="title" bg>{{ code.demo }}</i-code>
             </ul>
             <Anchor title="Examples" h2></Anchor>
             <Demo title="Basic Usage">
@@ -34,7 +34,7 @@
                 <div slot="desc">
                     <p>Basic usage. It shows the usage of <code>data</code>, <code>target-keys</code>, render function for each row - <code>render-format</code> and callback function for <code>on-change</code> event.</p>
                 </div>
-                <i-code lang="html" slot="code">{{ code.base }}</i-code>
+                <i-code :title="title" lang="html" slot="code">{{ code.base }}</i-code>
             </Demo>
             <Demo title="Search">
                 <div slot="demo">
@@ -47,7 +47,7 @@
                 <div slot="desc">
                     <p>Set <code>filterable</code> prop to enable filter. You can customize filter function.</p>
                 </div>
-                <i-code lang="html" slot="code">{{ code.search }}</i-code>
+                <i-code :title="title" lang="html" slot="code">{{ code.search }}</i-code>
             </Demo>
             <Demo title="Advanced Usage" vertical>
                 <div slot="demo">
@@ -67,7 +67,7 @@
                 <div slot="desc">
                     <p>Advanced usage of Transfer. You can customize the width and the height of the column, change transfer button's text, or add custom operations at the bottom. Details on API Doc.</p>
                 </div>
-                <i-code lang="html" slot="code">{{ code.high }}</i-code>
+                <i-code :title="title" lang="html" slot="code">{{ code.high }}</i-code>
             </Demo>
             <Demo title="Custom Row Data Rendering">
                 <div slot="demo">
@@ -80,7 +80,7 @@
                 <div slot="desc">
                     <p>You can render complex data by setting <code>render-format</code>.</p>
                 </div>
-                <i-code lang="html" slot="code">{{ code.render }}</i-code>
+                <i-code :title="title" lang="html" slot="code">{{ code.render }}</i-code>
             </Demo>
             <div class="api">
                 <Anchor title="API" h2></Anchor>

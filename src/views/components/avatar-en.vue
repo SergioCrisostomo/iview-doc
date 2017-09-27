@@ -30,7 +30,7 @@
                 <div slot="desc">
                     <p>Three sizes and two shapes are available.</p>
                 </div>
-                <i-code lang="html" slot="code">{{ code.base }}</i-code>
+                <i-code :title="title" lang="html" slot="code">{{ code.base }}</i-code>
             </Demo>
             <Demo title="Type">
                 <div slot="demo">
@@ -46,7 +46,7 @@
                 <div slot="desc">
                     <p>Image, Icon and letter are supported, and the latter two kinds avatar can have custom colors and background colors.</p>
                 </div>
-                <i-code lang="html" slot="code">{{ code.type }}</i-code>
+                <i-code :title="title" lang="html" slot="code">{{ code.type }}</i-code>
             </Demo>
             <Demo title="With Badge">
                 <div slot="demo">
@@ -62,7 +62,7 @@
                 <div slot="desc">
                     <p>Usually used for messages remind.</p>
                 </div>
-                <i-code lang="html" slot="code">{{ code.badge }}</i-code>
+                <i-code :title="title" lang="html" slot="code">{{ code.badge }}</i-code>
             </Demo>
             <Demo title="Autoset Font Size">
                 <div slot="demo">
@@ -74,7 +74,7 @@
                 <div slot="desc">
                     <p>For letter type Avatar, when the letters are too long to display, the font size can be automatically adjusted according to the width of the Avatar.</p>
                 </div>
-                <i-code lang="html" slot="code">{{ code.string }}</i-code>
+                <i-code :title="title" lang="html" slot="code">{{ code.string }}</i-code>
             </Demo>
 
             <div class="api">

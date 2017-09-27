@@ -15,7 +15,7 @@
                 <div slot="desc">
                     <p>Basic Usage: 4 alternative types: <code>info</code>, <code>success</code>, <code>warning</code>, <code>error</code>.</p>
                 </div>
-                <i-code lang="html" slot="code">{{ code.base }}</i-code>
+                <i-code :title="title" lang="html" slot="code">{{ code.base }}</i-code>
             </Demo>
             <Demo title="With Description">
                 <div slot="demo">
@@ -43,7 +43,7 @@
                 <div slot="desc">
                     <p>Customize <code>&lt;slot name="desc"&gt;</code> Discription Content.</p>
                 </div>
-                <i-code lang="html" slot="code">{{ code.desc }}</i-code>
+                <i-code :title="title" lang="html" slot="code">{{ code.desc }}</i-code>
             </Demo>
             <Demo title="Icon">
                 <div slot="demo">
@@ -80,7 +80,7 @@
                 <div slot="desc">
                     <p>Add different icons by type property, or customize icon slot.</p>
                 </div>
-                <i-code lang="html" slot="code">{{ code.icon }}</i-code>
+                <i-code :title="title" lang="html" slot="code">{{ code.icon }}</i-code>
             </Demo>
             <Demo title="Closable">
                 <div slot="demo">
@@ -97,7 +97,7 @@
                 <div slot="desc">
                     <p>Show close button, click to close alert. User can also customize close slot.</p>
                 </div>
-                <i-code lang="html" slot="code">{{ code.close }}</i-code>
+                <i-code :title="title" lang="html" slot="code">{{ code.close }}</i-code>
             </Demo>
             <Demo title="Banner">
                 <div slot="demo">
@@ -107,7 +107,7 @@
                 <div slot="desc">
                     <p>Set property <code>banner</code> can apply banner style.</p>
                 </div>
-                <i-code lang="html" slot="code">{{ code.banner }}</i-code>
+                <i-code :title="title" lang="html" slot="code">{{ code.banner }}</i-code>
             </Demo>
             <div class="api">
                 <Anchor title="API" h2></Anchor>

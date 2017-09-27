@@ -30,7 +30,7 @@
                 <div slot="desc">
                     <p>头像有三种尺寸，两种形状可选。</p>
                 </div>
-                <i-code lang="html" slot="code">{{ code.base }}</i-code>
+                <i-code :title="title" lang="html" slot="code">{{ code.base }}</i-code>
             </Demo>
             <Demo title="类型">
                 <div slot="demo">
@@ -46,7 +46,7 @@
                 <div slot="desc">
                     <p>支持三种类型：图片、Icon 以及字符，其中 Icon 和字符型可以自定义图标颜色及背景色。</p>
                 </div>
-                <i-code lang="html" slot="code">{{ code.type }}</i-code>
+                <i-code :title="title" lang="html" slot="code">{{ code.type }}</i-code>
             </Demo>
             <Demo title="带徽标的头像">
                 <div slot="demo">
@@ -62,7 +62,7 @@
                 <div slot="desc">
                     <p>通常用于消息提示。</p>
                 </div>
-                <i-code lang="html" slot="code">{{ code.badge }}</i-code>
+                <i-code :title="title" lang="html" slot="code">{{ code.badge }}</i-code>
             </Demo>
             <Demo title="自动调整字符大小">
                 <div slot="demo">
@@ -74,7 +74,7 @@
                 <div slot="desc">
                     <p>对于字符型的头像，当字符串较长时，字体大小可以根据头像宽度自动调整。</p>
                 </div>
-                <i-code lang="html" slot="code">{{ code.string }}</i-code>
+                <i-code :title="title" lang="html" slot="code">{{ code.string }}</i-code>
             </Demo>
 
             <div class="api">

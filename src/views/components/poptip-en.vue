@@ -41,7 +41,7 @@
                     <p>Poptip supports 3 triggers: hover, click and focus. The default is click.</p>
                     <p>Attention: Text in Poptip uses <code>white-space: nowrap;</code>, that is, no line wrap. If there are much content to show and line wrap is needed, we suggest you add style <code>white-space: normal;</code> to content slot.</p>
                 </div>
-                <i-code lang="html" slot="code">{{ code.base }}</i-code>
+                <i-code :title="title" lang="html" slot="code">{{ code.base }}</i-code>
             </Demo>
             <Demo title="Direction">
                 <div slot="demo">
@@ -95,7 +95,7 @@
                 <div slot="desc">
                     <p>We provide 12 different directions to show Poptip. Details on API Doc.</p>
                 </div>
-                <i-code lang="html" slot="code">{{ code.placement }}</i-code>
+                <i-code :title="title" lang="html" slot="code">{{ code.placement }}</i-code>
             </Demo>
             <Demo title="Close inside the Floating Layer">
                 <div slot="demo">
@@ -110,7 +110,7 @@
                 <div slot="desc">
                     <p>You can control tooltip's visibility by changing <code>v-model</code> to true or false.</p>
                 </div>
-                <i-code lang="html" slot="code">{{ code.visible }}</i-code>
+                <i-code :title="title" lang="html" slot="code">{{ code.visible }}</i-code>
             </Demo>
             <Demo title="Nest Complex Content">
                 <div slot="demo">
@@ -149,7 +149,7 @@
                 <div slot="desc">
                     <p>You can add complex content into Poptip by using content slot.</p>
                 </div>
-                <i-code lang="html" slot="code">{{ code.slot }}</i-code>
+                <i-code :title="title" lang="html" slot="code">{{ code.slot }}</i-code>
             </Demo>
             <Demo title="Confirm Dialog">
                 <div slot="demo">
@@ -173,7 +173,7 @@
                 <div slot="desc">
                     <p>Open confirm-dialog mode by setting <code>confirm</code> prop. The confirm dialog can only be activated by clicking. It only shows title's text. The content will be ignored.</p>
                 </div>
-                <i-code lang="html" slot="code">{{ code.confirm }}</i-code>
+                <i-code :title="title" lang="html" slot="code">{{ code.confirm }}</i-code>
             </Demo>
             <div class="api">
                 <Anchor title="API" h2></Anchor>

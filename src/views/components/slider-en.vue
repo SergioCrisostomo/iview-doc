@@ -23,7 +23,7 @@
                     <p></p>
                     <p>Note that when using a single slider, the <code>value</code> format is a number. When using as dual thumb mode, the <code>value</code> is an array of two, and each item is a number.</p>
                 </div>
-                <i-code lang="html" slot="code">{{ code.base }}</i-code>
+                <i-code :title="title" lang="html" slot="code">{{ code.base }}</i-code>
             </Demo>
             <Demo title="Discrete values">
                 <div slot="demo">
@@ -33,7 +33,7 @@
                 <div slot="desc">
                     <p>You can control the interval of each slide by setting the property <code>step</code>.</p>
                 </div>
-                <i-code lang="html" slot="code">{{ code.step }}</i-code>
+                <i-code :title="title" lang="html" slot="code">{{ code.step }}</i-code>
             </Demo>
             <Demo title="Breakpoints">
                 <div slot="demo">
@@ -43,7 +43,7 @@
                 <div slot="desc">
                     <p>You can display breakpoints by setting the property <code>show-stops</code>, which are recommended when the <code>step</code> interval is not intensive.</p>
                 </div>
-                <i-code lang="html" slot="code">{{ code.stops }}</i-code>
+                <i-code :title="title" lang="html" slot="code">{{ code.stops }}</i-code>
             </Demo>
             <Demo title="With input">
                 <div slot="demo">
@@ -52,7 +52,7 @@
                 <div slot="desc">
                     <p>Synchronize with <code>InptNumber</code> component by setting the property <code>show-input</code>.</p>
                 </div>
-                <i-code lang="html" slot="code">{{ code.input }}</i-code>
+                <i-code :title="title" lang="html" slot="code">{{ code.input }}</i-code>
             </Demo>
             <Demo title="Customerize tooltip">
                 <div slot="demo">
@@ -62,7 +62,7 @@
                 <div slot="desc">
                     <p>Slider will pass the current value to <code>tip-format</code> and display the returned value in Tooltip. If null, the Tooltip will be hidden.</p>
                 </div>
-                <i-code lang="html" slot="code">{{ code.format }}</i-code>
+                <i-code :title="title" lang="html" slot="code">{{ code.format }}</i-code>
             </Demo>
             <div class="api">
                 <Anchor title="API" h2></Anchor>

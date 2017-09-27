@@ -132,7 +132,7 @@
                 <div slot="desc">
                     <p>导航在顶部，有面包屑、正文的布局。</p>
                 </div>
-                <i-code lang="html" slot="code">{{ code.top }}</i-code>
+                <i-code :title="title" lang="html" slot="code">{{ code.top }}</i-code>
             </Demo>
             <Demo title="顶部导航+侧边栏" vertical hide-code>
                 <div slot="demo">
@@ -209,7 +209,7 @@
                 <div slot="desc">
                     <p>顶部导航并带有侧边栏。</p>
                 </div>
-                <i-code lang="html" slot="code">{{ code.left }}</i-code>
+                <i-code :title="title" lang="html" slot="code">{{ code.left }}</i-code>
             </Demo>
             <Demo title="侧边导航" vertical hide-code>
                 <div slot="demo">
@@ -267,7 +267,7 @@
                 <div slot="desc">
                     <p>左右结构，侧边导航。</p>
                 </div>
-                <i-code lang="html" slot="code">{{ code.side }}</i-code>
+                <i-code :title="title" lang="html" slot="code">{{ code.side }}</i-code>
             </Demo>
             <Demo title="吊顶" vertical hide-code>
                 <div slot="demo">
@@ -292,7 +292,7 @@
                 <div slot="desc">
                     <p>顶部辅助菜单。</p>
                 </div>
-                <i-code lang="html" slot="code">{{ code.ceiling }}</i-code>
+                <i-code :title="title" lang="html" slot="code">{{ code.ceiling }}</i-code>
             </Demo>
             <Demo title="可收起展开的侧边导航" vertical hide-code>
                 <div slot="demo">
@@ -341,7 +341,7 @@
                 <div slot="desc">
                     <p>左侧导航可以折叠。</p>
                 </div>
-                <i-code lang="html" slot="code">{{ code.fold }}</i-code>
+                <i-code :title="title" lang="html" slot="code">{{ code.fold }}</i-code>
             </Demo>
         </article>
     </i-article>

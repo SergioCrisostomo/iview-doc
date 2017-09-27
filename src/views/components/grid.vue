@@ -100,7 +100,7 @@
                     <p>水平排列的布局。</p>
                     <p><code>col</code>必须放在<code>row</code>里面。</p>
                 </div>
-                <i-code lang="html" slot="code">{{ code.base }}</i-code>
+                <i-code :title="title" lang="html" slot="code">{{ code.base }}</i-code>
             </Demo>
 
             <Demo title="区块间隔">
@@ -123,7 +123,7 @@
                 <div slot="desc">
                     <p>通过给 <code>row</code> 添加 <code>gutter</code> 属性，可以给下属的 <code>col</code> 添加间距，推荐使用 <code>(16+8n)px</code> 作为栅格间隔。</p>
                 </div>
-                <i-code lang="html" slot="code">{{ code.gutter }}</i-code>
+                <i-code :title="title" lang="html" slot="code">{{ code.gutter }}</i-code>
             </Demo>
 
             <Demo title="栅格顺序(Flex)">
@@ -138,7 +138,7 @@
                 <div slot="desc">
                     <p>通过 Flex 布局的<code>order</code>来改变栅格的顺序。</p>
                 </div>
-                <i-code lang="html" slot="code">{{ code.order }}</i-code>
+                <i-code :title="title" lang="html" slot="code">{{ code.order }}</i-code>
             </Demo>
 
             <Demo title="栅格排序">
@@ -151,7 +151,7 @@
                 <div slot="desc">
                     <p>通过设置<code>push</code>和<code>pull</code>来改变栅格的顺序。</p>
                 </div>
-                <i-code lang="html" slot="code">{{ code.push }}</i-code>
+                <i-code :title="title" lang="html" slot="code">{{ code.push }}</i-code>
             </Demo>
 
             <Demo title="左右偏移">
@@ -173,7 +173,7 @@
                 <div slot="desc">
                     <p>通过设置<code>offset</code>属性，将列进行左右偏移，偏移栅格数为offset的值。</p>
                 </div>
-                <i-code lang="html" slot="code">{{ code.offset }}</i-code>
+                <i-code :title="title" lang="html" slot="code">{{ code.offset }}</i-code>
             </Demo>
 
             <Demo title="Flex布局">
@@ -217,7 +217,7 @@
                 <div slot="desc">
                     <p>通过给<code>row</code>设置参数<code>justify</code>为不同的值，来定义子元素的排布方式。在<code>flex</code>模式下有效。</p>
                 </div>
-                <i-code lang="html" slot="code">{{ code.justify }}</i-code>
+                <i-code :title="title" lang="html" slot="code">{{ code.justify }}</i-code>
             </Demo>
 
             <Demo title="Flex对齐">
@@ -247,7 +247,7 @@
                 <div slot="desc">
                     <p>通过给<code>row</code>设置参数<code>align</code>为不同的值，来定义子元素在垂直方向上的排布方式。在<code>flex</code>模式下有效。</p>
                 </div>
-                <i-code lang="html" slot="code">{{ code.align }}</i-code>
+                <i-code :title="title" lang="html" slot="code">{{ code.align }}</i-code>
             </Demo>
 
             <Demo title="响应式布局">
@@ -262,7 +262,7 @@
                     <p>参照 Bootstrap 的 <a href="http://getbootstrap.com/css/#grid-media-queries" target="_blank">响应式设计</a>，预设四个响应尺寸：xs sm md lg，详见 API。</p>
                     <p>调整浏览器尺寸来查看效果。</p>
                 </div>
-                <i-code lang="html" slot="code">{{ code.reponsive }}</i-code>
+                <i-code :title="title" lang="html" slot="code">{{ code.reponsive }}</i-code>
             </Demo>
 
             <Demo title="其它属性的响应式">
@@ -277,7 +277,7 @@
                     <p><code>span</code> <code>pull</code> <code>push</code> <code>offset</code> <code>order</code> 属性可以通过内嵌到 <code>xs</code> <code>sm</code> <code>md</code> <code>lg</code> 属性中来使用。</p>
                     <p>其中 <code>:xs="6"</code> 相当于 <code>:xs="{ span: 6 }"</code>。</p>
                 </div>
-                <i-code lang="html" slot="code">{{ code.reponsive2 }}</i-code>
+                <i-code :title="title" lang="html" slot="code">{{ code.reponsive2 }}</i-code>
             </Demo>
 
             <div class="api">

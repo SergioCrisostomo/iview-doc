@@ -26,7 +26,7 @@
                         <p>Set <code>type</code> prop to <code>date</code> or <code>daterange</code> to show <strong>Pick Single Date</strong> or <strong>Pick Range</strong> type.</p>
                         <p>Set <code>placement</code> prop to change the display direction of the DatePicker. Same as Poptip and Tooltip, <code>placement</code> supports 12 directions. Details on API doc below.</p>
                     </div>
-                    <i-code lang="html" slot="code">{{ code.base }}</i-code>
+                    <i-code :title="title" lang="html" slot="code">{{ code.base }}</i-code>
                 </Demo>
                 <Demo title="Shortcut">
                     <div slot="demo">
@@ -44,7 +44,7 @@
                         <p>Within it, <strong>value</strong> is a function that must return a date. If you use daterange, an array need to be returned.</p>
                         <p>value accept any correct date format, such as: 2016-12-24, 12/24/16.</p>
                     </div>
-                    <i-code lang="html" slot="code">{{ code.shortcuts }}</i-code>
+                    <i-code :title="title" lang="html" slot="code">{{ code.shortcuts }}</i-code>
                 </Demo>
                 <Demo title="Date Format">
                     <div slot="demo">
@@ -61,7 +61,7 @@
                         <p>Set <code>format</code> prop to change the date format. Details in <a href="javascript:void(0)" @click="handleShowDate"><Icon type="information-circled"></Icon> Date</a>.</p>
                         <p>Attention, format only changes the date format that displays not value.</p>
                     </div>
-                    <i-code lang="html" slot="code">{{ code.format }}</i-code>
+                    <i-code :title="title" lang="html" slot="code">{{ code.format }}</i-code>
                 </Demo>
                 <Demo title="Date Time Picker">
                     <div slot="demo">
@@ -77,7 +77,7 @@
                         <p>Set <code>type</code> prop to <code>datetime</code> or <code>datetimerange</code> to pick time.</p>
                         <p>Set format and ignore second to reserve only hour and minute.</p>
                     </div>
-                    <i-code lang="html" slot="code">{{ code.datetime }}</i-code>
+                    <i-code :title="title" lang="html" slot="code">{{ code.datetime }}</i-code>
                 </Demo>
                 <Demo title="Year and Month">
                     <div slot="demo">
@@ -93,7 +93,7 @@
                     <div slot="desc">
                         <p>设置属性 <code>type</code> 为 <code>year</code> 或 <code>month</code> 可以使用选择年或月的功能。</p>
                     </div>
-                    <i-code lang="html" slot="code">{{ code.type }}</i-code>
+                    <i-code :title="title" lang="html" slot="code">{{ code.type }}</i-code>
                 </Demo>
                 <Demo title="Disabled">
                     <div slot="demo">
@@ -110,7 +110,7 @@
                         <p>Set <code>disabledDate</code> in <code>options</code> object prop to set a date that can't be picked.</p>
                         <p>disabledDate is a function which accepts an argument: current date. A Boolean value needs to be returned to disable the date or not.</p>
                     </div>
-                    <i-code lang="html" slot="code">{{ code.disabled }}</i-code>
+                    <i-code :title="title" lang="html" slot="code">{{ code.disabled }}</i-code>
                 </Demo>
                 <Demo title="Operation with Confirmation">
                     <div slot="demo">
@@ -127,7 +127,7 @@
                         <p> DatePicker won't close actively after picking if you set <code>confirm</code> prop. It requires a confirmation.</p>
                         <p>Ok button won't affect date picking operation.</p>
                     </div>
-                    <i-code lang="html" slot="code">{{ code.confirm }}</i-code>
+                    <i-code :title="title" lang="html" slot="code">{{ code.confirm }}</i-code>
                 </Demo>
                 <Demo title="Manually Controlled Component">
                     <div slot="demo">
@@ -149,7 +149,7 @@
                     <div slot="desc">
                         <p>In some customized scenes, you can use slot with <code>open</code> prop and events to control the display status of the component. Details on API doc below.</p>
                     </div>
-                    <i-code lang="html" slot="code">{{ code.slot }}</i-code>
+                    <i-code :title="title" lang="html" slot="code">{{ code.slot }}</i-code>
                 </Demo>
                 <Demo title="Size">
                     <div slot="demo">
@@ -168,7 +168,7 @@
                     <div slot="desc">
                         <p>Set <code>size</code> prop to <code>large</code> or <code>small</code> to adjust the size of DatePicker to large or small. Default is medium.</p>
                     </div>
-                    <i-code lang="html" slot="code">{{ code.size }}</i-code>
+                    <i-code :title="title" lang="html" slot="code">{{ code.size }}</i-code>
                 </Demo>
                 <div class="api">
                     <Anchor title="API" h2></Anchor>

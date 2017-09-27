@@ -20,7 +20,7 @@
                     <code>@on-change</code>：当点击转移按钮时，组件本身并不会转移数据，而是触发事件，由用户来操作数据。
                 </li>
                 <p>示例：</p>
-                <i-code bg>{{ code.demo }}</i-code>
+                <i-code :title="title" bg>{{ code.demo }}</i-code>
             </ul>
             <Anchor title="代码示例" h2></Anchor>
             <Demo title="基础用法">
@@ -34,7 +34,7 @@
                 <div slot="desc">
                     <p>基本用法，展示了 <code>data</code>、<code>target-keys</code>、每行的渲染函数 <code>render-format</code> 以及回调函数 <code>on-change</code> 的用法。</p>
                 </div>
-                <i-code lang="html" slot="code">{{ code.base }}</i-code>
+                <i-code :title="title" lang="html" slot="code">{{ code.base }}</i-code>
             </Demo>
             <Demo title="搜索">
                 <div slot="demo">
@@ -47,7 +47,7 @@
                 <div slot="desc">
                     <p>通过设置属性 <code>filterable</code> 可以进行搜索，可以自定义搜索函数。</p>
                 </div>
-                <i-code lang="html" slot="code">{{ code.search }}</i-code>
+                <i-code :title="title" lang="html" slot="code">{{ code.search }}</i-code>
             </Demo>
             <Demo title="高级用法" vertical>
                 <div slot="demo">
@@ -67,7 +67,7 @@
                 <div slot="desc">
                     <p>穿梭框高级用法，可以自定义两列的宽高、操作文案，以及底部自定义操作，更多配置见 API。</p>
                 </div>
-                <i-code lang="html" slot="code">{{ code.high }}</i-code>
+                <i-code :title="title" lang="html" slot="code">{{ code.high }}</i-code>
             </Demo>
             <Demo title="自定义渲染行数据">
                 <div slot="demo">
@@ -80,7 +80,7 @@
                 <div slot="desc">
                     <p>可以通过 <code>render-format</code> 来渲染复杂的数据。</p>
                 </div>
-                <i-code lang="html" slot="code">{{ code.render }}</i-code>
+                <i-code :title="title" lang="html" slot="code">{{ code.render }}</i-code>
             </Demo>
             <div class="api">
                 <Anchor title="API" h2></Anchor>

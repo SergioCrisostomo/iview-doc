@@ -48,9 +48,9 @@
             <p>iView uses open source icon set <a href="http://ionicons.com/" target="_blank"><Icon type="ionic"></Icon> ionicons</a></p>
             <Anchor title="How to Use" h2></Anchor>
             <p>Use <code>&lt;Icon /></code> component, Set corresponding <code>type</code> prop of the icon. Sample code:</p>
-            <i-code lang="html" bg>{{ code.demo }}</i-code>
+            <i-code :title="title" lang="html" bg>{{ code.demo }}</i-code>
             <p>After rending:</p>
-            <i-code lang="html" bg>{{ code.render }}</i-code>
+            <i-code :title="title" lang="html" bg>{{ code.render }}</i-code>
             <div class="api">
                 <Anchor title="API" h2></Anchor>
                 <Anchor title="Icon props" h3></Anchor>

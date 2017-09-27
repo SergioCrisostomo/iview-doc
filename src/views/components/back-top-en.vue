@@ -21,7 +21,7 @@
                 <div slot="desc">
                     <p>Default at 30px to the right and the bottom, display when scroll to 400px to the top.</p>
                 </div>
-                <i-code lang="html" slot="code">{{ code.base }}</i-code>
+                <i-code :title="title" lang="html" slot="code">{{ code.base }}</i-code>
             </Demo>
             <Demo title="Customized Style">
                 <div slot="demo">
@@ -33,7 +33,7 @@
                 <div slot="desc">
                     <p>Custimize the position of the BackTop button at 200px to the bottom, and display when scroll to 200px to the top.</p>
                 </div>
-                <i-code lang="html" slot="code">{{ code.custom }}</i-code>
+                <i-code :title="title" lang="html" slot="code">{{ code.custom }}</i-code>
             </Demo>
 
             <div class="api">

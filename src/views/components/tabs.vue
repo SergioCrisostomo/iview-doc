@@ -52,7 +52,7 @@
                 <div slot="desc">
                     <p><code>value</code> 与 <code>TabPane</code> 的 <code>name</code> 对应，用于标识当前激活的是哪一项，name 值默认从 0 开始，默认激活第一项。可以使用 v-model 双向绑定数据。</p>
                 </div>
-                <i-code lang="html" slot="code">{{ code.base }}</i-code>
+                <i-code :title="title" lang="html" slot="code">{{ code.base }}</i-code>
             </Demo>
             <Demo title="禁用">
                 <div slot="demo">
@@ -65,7 +65,7 @@
                 <div slot="desc">
                     <p>禁用某一项。</p>
                 </div>
-                <i-code lang="html" slot="code">{{ code.disabled }}</i-code>
+                <i-code :title="title" lang="html" slot="code">{{ code.disabled }}</i-code>
             </Demo>
             <Demo title="图标">
                 <div slot="demo">
@@ -78,7 +78,7 @@
                 <div slot="desc">
                     <p>通过设置属性 <code>icon</code>，可以显示一个图标。</p>
                 </div>
-                <i-code lang="html" slot="code">{{ code.icon }}</i-code>
+                <i-code :title="title" lang="html" slot="code">{{ code.icon }}</i-code>
             </Demo>
             <Demo title="迷你型">
                 <div slot="demo">
@@ -91,7 +91,7 @@
                 <div slot="desc">
                     <p>设置属性 <code>size</code> 为 <code>small</code> 可以显示为迷你型，只在 <code>type</code> 为 <code>line</code> 时有效。</p>
                 </div>
-                <i-code lang="html" slot="code">{{ code.mini }}</i-code>
+                <i-code :title="title" lang="html" slot="code">{{ code.mini }}</i-code>
             </Demo>
             <Demo title="卡片样式">
                 <div slot="demo">
@@ -104,7 +104,7 @@
                 <div slot="desc">
                     <p>设置属性 <code>type</code> 为 <code>card</code> 可以显示卡片样式，常用于容器顶部。</p>
                 </div>
-                <i-code lang="html" slot="code">{{ code.card }}</i-code>
+                <i-code :title="title" lang="html" slot="code">{{ code.card }}</i-code>
             </Demo>
             <Demo title="可关闭">
                 <div slot="demo">
@@ -118,7 +118,7 @@
                     <p>通过设置属性 <code>closable</code> 可以关闭某一项，仅在 <code>type</code> 为 <code>card</code> 时有效。</p>
                     <p>需结合 @on-tab-remove 事件手动关闭标签页。</p>
                 </div>
-                <i-code lang="html" slot="code">{{ code.closable }}</i-code>
+                <i-code :title="title" lang="html" slot="code">{{ code.closable }}</i-code>
             </Demo>
             <Demo title="自定义标签页">
                 <div slot="demo">
@@ -132,7 +132,7 @@
                     <p>设置 label 为 Render 函数后，可以自定义标签页的内容。</p>
                     <p><study-render></study-render></p>
                 </div>
-                <i-code lang="html" slot="code">{{ code.render }}</i-code>
+                <i-code :title="title" lang="html" slot="code">{{ code.render }}</i-code>
             </Demo>
             <Demo title="附加内容">
                 <div slot="demo">
@@ -144,7 +144,7 @@
                 <div slot="desc">
                     <p>设置 slot <code>extra</code> 可以在页签右边添加附加操作。</p>
                 </div>
-                <i-code lang="html" slot="code">{{ code.extra }}</i-code>
+                <i-code :title="title" lang="html" slot="code">{{ code.extra }}</i-code>
             </Demo>
             <Demo title="不使用动画">
                 <div slot="demo">
@@ -157,7 +157,7 @@
                 <div slot="desc">
                     <p>通过设置属性 <code>animated</code> 为 <code>false</code> 可以禁用动画。</p>
                 </div>
-                <i-code lang="html" slot="code">{{ code.animated }}</i-code>
+                <i-code :title="title" lang="html" slot="code">{{ code.animated }}</i-code>
             </Demo>
             <Demo title="其它样式" vertical hide-code>
                 <div slot="demo">
@@ -181,7 +181,7 @@
                 <div slot="desc">
                     <p>可以根据业务自定义 UI，需要一点额外的样式覆盖。</p>
                 </div>
-                <i-code lang="html" slot="code">{{ code.style }}</i-code>
+                <i-code :title="title" lang="html" slot="code">{{ code.style }}</i-code>
             </Demo>
             <div class="api">
                 <Anchor title="API" h2></Anchor>

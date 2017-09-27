@@ -35,7 +35,7 @@
                 <div slot="desc">
                     <p>最基本的用法。</p>
                 </div>
-                <i-code lang="html" slot="code">{{ code.base }}</i-code>
+                <i-code :title="title" lang="html" slot="code">{{ code.base }}</i-code>
             </Demo>
             <Demo title="自动切换">
                 <div slot="demo">
@@ -57,7 +57,7 @@
                 <div slot="desc">
                     <p>设置属性 <code>autoplay</code> 可以自动轮播，同时可以设置属性 <code>autoplay-speed</code> 改变自动播放的速度。</p>
                 </div>
-                <i-code lang="html" slot="code">{{ code.autoplay }}</i-code>
+                <i-code :title="title" lang="html" slot="code">{{ code.autoplay }}</i-code>
             </Demo>
             <Demo title="综合设置">
                 <div slot="demo">
@@ -116,7 +116,7 @@
                 <div slot="desc">
                     <p>动态调整各配置。</p>
                 </div>
-                <i-code lang="html" slot="code">{{ code.setting }}</i-code>
+                <i-code :title="title" lang="html" slot="code">{{ code.setting }}</i-code>
             </Demo>
             <div class="api">
                 <Anchor title="API" h2></Anchor>

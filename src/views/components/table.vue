@@ -41,7 +41,7 @@
                     <div slot="desc">
                         <p>表格的最简单用法。</p>
                     </div>
-                    <i-code lang="html" slot="code">{{ code.base }}</i-code>
+                    <i-code :title="title" lang="html" slot="code">{{ code.base }}</i-code>
                 </Demo>
                 <Demo title="斑马纹" vertical hide-code>
                     <div slot="demo">
@@ -50,7 +50,7 @@
                     <div slot="desc">
                         <p>设置属性 <code>stripe</code> ，表格会间隔显示不同颜色，用于区分不同行数据。</p>
                     </div>
-                    <i-code lang="html" slot="code">{{ code.stripe }}</i-code>
+                    <i-code :title="title" lang="html" slot="code">{{ code.stripe }}</i-code>
                 </Demo>
                 <Demo title="带边框" vertical hide-code>
                     <div slot="demo">
@@ -59,7 +59,7 @@
                     <div slot="desc">
                         <p>添加表格的边框线。</p>
                     </div>
-                    <i-code lang="html" slot="code">{{ code.border }}</i-code>
+                    <i-code :title="title" lang="html" slot="code">{{ code.border }}</i-code>
                 </Demo>
                 <Demo title="特定样式" vertical hide-code>
                     <div slot="demo">
@@ -75,7 +75,7 @@
                         <p><strong>列</strong>：通过给列 columns 设置字段 <code>className</code> 可以给某一列指定一个样式。</p>
                         <p><strong>单元格</strong>：通过给数据 data 设置字段 <code>cellClassName</code> 可以给任意一个单元格指定样式。</p>
                     </div>
-                    <i-code lang="html" slot="code">{{ code.class }}</i-code>
+                    <i-code :title="title" lang="html" slot="code">{{ code.class }}</i-code>
                 </Demo>
                 <Demo title="固定表头" vertical hide-code>
                     <div slot="demo">
@@ -84,7 +84,7 @@
                     <div slot="desc">
                         <p>通过设置属性 <code>height</code> 给表格指定高度后，会自动固定表头。当纵向内容过多时可以使用。</p>
                     </div>
-                    <i-code lang="html" slot="code">{{ code.height }}</i-code>
+                    <i-code :title="title" lang="html" slot="code">{{ code.height }}</i-code>
                 </Demo>
                 <Demo title="固定列" vertical hide-code>
                     <div slot="demo">
@@ -93,7 +93,7 @@
                     <div slot="desc">
                         <p>通过给数据 <code>columns</code> 的项设置 <code>fixed</code> 为 <code>left</code> 或 <code>right</code>，可以左右固定需要的列。当横向内容过多时可以使用。</p>
                     </div>
-                    <i-code lang="html" slot="code">{{ code.fixed }}</i-code>
+                    <i-code :title="title" lang="html" slot="code">{{ code.fixed }}</i-code>
                 </Demo>
                 <Demo title="固定表头和列" vertical hide-code>
                     <div slot="demo">
@@ -102,7 +102,7 @@
                     <div slot="desc">
                         <p>同时应用上述两个属性，可以同时固定表头和列。</p>
                     </div>
-                    <i-code lang="html" slot="code">{{ code.fixedAll }}</i-code>
+                    <i-code :title="title" lang="html" slot="code">{{ code.fixedAll }}</i-code>
                 </Demo>
                 <Demo title="单选" vertical hide-code>
                     <div slot="demo">
@@ -117,7 +117,7 @@
                         <p>给 data 项设置特殊 key <code>_highlight: true</code> 可以默认选中当前项。</p>
                         <p>调用 <code>clearCurrentRow</code> 方法可以手动清除选中项。</p>
                     </div>
-                    <i-code lang="html" slot="code">{{ code.highlight }}</i-code>
+                    <i-code :title="title" lang="html" slot="code">{{ code.highlight }}</i-code>
                 </Demo>
                 <Demo title="多选" vertical hide-code>
                     <div slot="demo">
@@ -137,7 +137,7 @@
                             <li><code>@on-selection-change</code>，只要选中项发生变化时就会触发，返回值为 <code>selection</code>，已选项。</li>
                         </ul>
                     </div>
-                    <i-code lang="html" slot="code">{{ code.selection }}</i-code>
+                    <i-code :title="title" lang="html" slot="code">{{ code.selection }}</i-code>
                 </Demo>
                 <Demo title="排序" vertical hide-code>
                     <div slot="demo">
@@ -150,7 +150,7 @@
                         <p>如果使用远程排序，可以设置 <code>sortable： 'custom'</code>，然后在触发排序事件 <code>@on-sort-change</code>后，进行远程排序，并手动设置新的 data，详见 API。</p>
                         <p>注意，排序并不会影响到源数据 data。</p>
                     </div>
-                    <i-code lang="html" slot="code">{{ code.sort }}</i-code>
+                    <i-code :title="title" lang="html" slot="code">{{ code.sort }}</i-code>
                 </Demo>
                 <Demo title="筛选" vertical hide-code>
                     <div slot="demo">
@@ -162,7 +162,7 @@
                         <p>如果指定 <code>filterMultiple: false</code>，则使用单选，默认为多选。</p>
                         <p>注意，筛选并不会影响到源数据 data。</p>
                     </div>
-                    <i-code lang="html" slot="code">{{ code.filter }}</i-code>
+                    <i-code :title="title" lang="html" slot="code">{{ code.filter }}</i-code>
                 </Demo>
                 <Demo title="自定义列模板" vertical hide-code>
                     <div slot="demo">
@@ -178,7 +178,7 @@
                             <code>render</code> 函数本质返回的是字符串，Table 组件在内部对其进行了编译，如果使用了自定义组件，需要特别注意上下文，编译后的自定义组件，默认的上下文是 <code>Table</code> 所在的上下文，如果想让组件在指定的实例下编译，可以给 <code>Table</code> 设置属性 <code>context</code> 来指定上下文，比如本例指定当前路由页为上下文。一般情况不需要此配置，但如果你把 <code>Table</code> 作为一个 slot 封装在其它组件里，这时 <code>context</code> 属性就很有用，比如父级是 $parent，根组件 $root。
                         </blockquote>
                     </div>
-                    <i-code lang="html" slot="code">{{ code.render }}</i-code>
+                    <i-code :title="title" lang="html" slot="code">{{ code.render }}</i-code>
                 </Demo>
                 <Demo title="可展开" vertical hide-code>
                     <div slot="demo">
@@ -191,7 +191,7 @@
                         <p>渲染展开区域与自定义列模板方法类似，使用 render 函数。当内容较复杂时，可拆分为组件或使用 JSX。</p>
                         <p><study-render></study-render></p>
                     </div>
-                    <i-code lang="html" slot="code">{{ code.expand }}</i-code>
+                    <i-code :title="title" lang="html" slot="code">{{ code.expand }}</i-code>
                 </Demo>
                 <Demo title="加载中" vertical hide-code>
                     <div slot="demo">
@@ -202,7 +202,7 @@
                     <div slot="desc">
                         <p>通过设置属性 <code>loading</code> 可以让表格处于加载中状态，在异步请求数据、分页时建议使用。</p>
                     </div>
-                    <i-code lang="html" slot="code">{{ code.loading }}</i-code>
+                    <i-code :title="title" lang="html" slot="code">{{ code.loading }}</i-code>
                 </Demo>
                 <Demo title="尺寸" vertical hide-code>
                     <div slot="demo">
@@ -213,7 +213,7 @@
                     <div slot="desc">
                         <p>通过设置属性 <code>size</code> 为 <code>large</code> 或 <code>small</code> 可以调整表格尺寸为大或小，默认不填或填写 <code>default</code> 为中。</p>
                     </div>
-                    <i-code lang="html" slot="code">{{ code.size }}</i-code>
+                    <i-code :title="title" lang="html" slot="code">{{ code.size }}</i-code>
                 </Demo>
                 <Demo title="导出csv" vertical hide-code>
                     <div slot="demo">
@@ -232,7 +232,7 @@
                             <li>IE9暂时只支持英文，中文会显示为乱码。</li>
                         </ul>
                     </div>
-                    <i-code lang="html" slot="code">{{ code.csv }}</i-code>
+                    <i-code :title="title" lang="html" slot="code">{{ code.csv }}</i-code>
                 </Demo>
                 <Anchor title="高级示例" h2></Anchor>
                 <p>以上示例已经基本涵盖了表格组件的所有功能，我们根据实际业务场景，增加了一些较为复杂的示例，可以结合来看，更深入了解表格组件的使用。</p>
@@ -667,7 +667,7 @@
                         <Page :total="100" :current="1" @on-change="changePage"></Page>
                     </div>
                 </div>
-                <i-code lang="html" bg>{{ code.table1 }}</i-code>
+                <i-code :title="title" lang="html" bg>{{ code.table1 }}</i-code>
             </div>
         </Modal>
         <Modal v-model="table2" title="多列指标筛选的表格" width="1000" :styles="{top: '20px'}">
@@ -693,7 +693,7 @@
                 </Checkbox-group>
                 <Table :data="tableData2" :columns="tableColumns2" border></Table>
                 <br>
-                <i-code lang="html" bg>{{ code.table2 }}</i-code>
+                <i-code :title="title" lang="html" bg>{{ code.table2 }}</i-code>
             </div>
         </Modal>
         <Modal v-model="table3" title="多种效果组合的表格" width="1000" :styles="{top: '20px'}">
@@ -721,7 +721,7 @@
                 </div>
                 <Table :border="showBorder" :stripe="showStripe" :show-header="showHeader" :height="fixedHeader ? 250 : ''" :size="tableSize" :data="tableData3" :columns="tableColumns3"></Table>
                 <br>
-                <i-code lang="html" bg>{{ code.table3 }}</i-code>
+                <i-code :title="title" lang="html" bg>{{ code.table3 }}</i-code>
             </div>
         </Modal>
     </div>
